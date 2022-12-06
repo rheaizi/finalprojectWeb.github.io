@@ -1,0 +1,154 @@
+header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+  transition: opacity 0.5s ease-out;
+}
+
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  height: 160px;
+  transition: all .5s ease-out;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) -59.23%, rgba(0, 0, 0, 0));
+}
+
+header .container .header_logo {
+  position: absolute;
+  z-index: 35;
+  display: block;
+  left: 46.5%;
+  background: url("../img/main_page/logo/logo_turan_white.svg") no-repeat 50%/cover;
+  width: 106px;
+  height: 54px;
+}
+
+header .container .header_logo:hover {
+  background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.main_tau {
+  width: 100%;
+  height: 96vh;
+}
+
+.main_bottle {
+  background: url("../img/main_page/botelke.png") no-repeat bottom/contain;
+  width: 100%;
+  height: 85%;
+  position: absolute;
+  top: 115px;
+  z-index: 6;
+}
+
+.main_tolkyn {
+  width: 100%;
+  height: 15vh;
+  background: url("../img/main_page/botelke_background.png") no-repeat top/cover;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+}
+
+.single_turan {
+  margin-left: 90px;
+  padding: 4rem 15px;
+  background-color: white;
+}
+
+.single_turan_title {
+  font-family: 'Montserrat Alternates';
+  font-size: 65px;
+  line-height: 1.5;
+  letter-spacing: -0.99px;
+  max-width: 880px;
+  color: #002856;
+  margin-bottom: 64px;
+}
+
+.single_turan_descr {
+  font-family: 'Museo Sans Cyrl 300';
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+  color: #182438;
+  max-width: 629px;
+}
+
+.zhumbaktas {
+  background: url("../img/main_page/kol.jpg") 0 0/100% auto no-repeat;
+  height: 971px;
+  padding: 102px 0 160px;
+  z-index: 14;
+  position: relative;
+}
+
+.zhumbaktas_content {
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.zhumbaktas_content_title {
+  font-family: 'Montserrat Alternates';
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: -0.9px;
+  color: #FFFFFF;
+}
+
+.zhumbaktas_content_descr {
+  font-family: 'Museo Sans Cyrl 300';
+  font-size: 16px;
+  width: 390px;
+  margin-top: 40px;
+  margin-left: auto;
+  line-height: 28px;
+  letter-spacing: -0.24px;
+  color: #FFFFFF;
+}
+
+.zhumbaktas_content a {
+  display: block;
+  width: 210px;
+  height: 210px;
+  text-align: center;
+  position: relative;
+}
+
+.zhumbaktas_content a span {
+  color: white;
+  position: absolute;
+  top: 90px;
+  left: 55px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.zhumbaktas_content a::before {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 210px;
+  background: url("../img/main_page/btn_wave.svg") no-repeat 50%;
+  background-size: contain;
+}
+
+.zhumbaktas_banner {
+  width: 40%;
+  height: 70%;
+  background: url("../img/main_page/banner_bottle.png") 0 0/cover no-repeat;
+  position: absolute;
+  top: 70px;
+}
