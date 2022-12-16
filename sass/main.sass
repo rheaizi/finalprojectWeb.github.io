@@ -544,15 +544,58 @@ header
         letter-spacing: -0.24px
         font-family: 'Montserrat Alternates',serif
     &_wrap
+        display: flex
         &_slider
+            position: relative
             width: 670px
-            height: 670px
-            margin-left: 280px
+            height: 600px
+            margin-left: 320px
             &_items
+                display: flex
+                justify-content: space-between
+                margin-top: 60px
+                &_left
+                    img
+                        width: 120px
+                    &_text
+                        text-align: center
+                        font-family: 'Museo Sans Cyrl 300'
+                        letter-spacing: -0.24px
+                        span
+                            color: #00a0df;
+                &_center
+                    margin-top: -40px
+                    img
+                        width: 150px
+                    &_text
+                        text-align: center
+                        font-family: 'Museo Sans Cyrl 300'
+                        letter-spacing: -0.24px
+                        span
+                            color: #00a0df;
+                &_right
+                    img
+                        width: 120px
+                    &_text
+                        text-align: center
+                        font-family: 'Museo Sans Cyrl 300'
+                        letter-spacing: -0.24px
+                        span
+                            color: #00a0df;
             &_backgrounds
+                position: absolute
+                z-index: -1
+                top: 125px
+                left: 160px
+                &_zhemis
+                    width: 350px
+                    height: 350px
+                    display: block
+                    margin: 0 auto
+                    border-radius: 50%
         &_elements
             width: 180px
-            margin-left: 60px
+            margin-left: 180px
             height: 584px
             &_m1
                 margin-left: auto
@@ -707,3 +750,198 @@ header
                         text-align: center
                         font-size: 12px
                         font-family: 'Museo Sans Cyrl 300'
+            &_link
+                font-family: 'Museo Sans Cyrl 500',serif
+                font-size: 14px
+                color: #00a0df
+                padding-right: 25px
+                position: relative
+                text-decoration: none
+                &::after
+                    position: absolute
+                    content: ""
+                    background: url('https://turanwater.com/assets/img/arrow_color.svg') no-repeat
+                    width: 10px
+                    height: 12px
+                    top: 20%
+                    right: 5px
+.glass_of_water
+    .container
+        display: flex
+        background-color: #ecf7fe 
+    &_left
+        img
+            width: 1060px
+    &_right
+        padding-left: 70px
+        &_count
+            margin-top: 80px
+            font-size: 50px
+            font-family: 'Montserrat Alternates',sans-serif
+            color: #00a0df;
+            span
+                color: rgba(0,0,0,0);
+                -webkit-text-stroke: 1px #00a0df
+        &_title
+            max-width: 450px
+            margin-top: 135px
+            color: #002856
+            font-size: 60px
+            letter-spacing: -0.24px
+            font-family: 'Montserrat Alternates'
+        &_descr
+            font-family: 'Montserrat Alternates'
+            color: #002856
+            font-size: 24px 
+            line-height: 28px
+        &_button 
+            margin-top: 160px
+            button
+                width: 48px
+                height: 48px
+                margin-right: 24px
+                cursor: pointer
+                border-radius: 50%
+                background: rgba(0,0,0,0)
+                border: 1px solid #00a0df
+                img
+                    width: 8px
+                    height: 12px
+                &:hover
+                    background: #00a0df
+footer
+    padding: 48px 0 32px 0
+    .container
+        margin: 0 65px
+        padding: 0 15px
+        .row
+            display: flex
+            &_logo
+                width: 327px
+                padding: 0 15px
+            &_product
+                width: 327px
+                padding: 0 15px
+                &_list
+                    list-style: none
+                    li
+                        margin-bottom: 20.8px
+                        a
+                            text-decoration: none
+                            font-family: 'Museo Sans Cyrl 500',sans-serif
+                            color: #182438
+                            font-size: 14px
+                            letter-spacing: -0.24px
+                &_socials
+                    margin-left: 40px
+                    a
+                        img
+                            height: 22px
+                            width: 22px
+                        &:first-child
+                            margin-right: 30px
+            &_main_office
+                width: 327px
+                padding: 0 15px
+                position: relative
+                p
+                    font-family: 'Museo Sans Cyrl 500'
+                ul
+                    padding-left: 28px
+                    position: relative
+                    list-style: none
+                    li
+                        margin-bottom: 10px
+                        a
+                            text-decoration: none
+                            font-size: 14px
+                            color: #002856
+                            font-family: 'Museo Sans Cyrl 300'
+                        &:first-child
+                            a
+                                color: #00a0df
+                            &::before
+                                position: absolute
+                                content: ""
+                                background: url('https://turanwater.com/assets/img/phone.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                                left: 0
+                        &:last-child
+                            &::before
+                                position: absolute
+                                content: ""
+                                background: url('https://turanwater.com/assets/img/email.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                                left: 0                            
+
+            &_office
+                font-family: 'Museo Sans Cyrl 300'
+                font-size: 14px
+                padding: 0 15px
+                &_title
+                    font-family: 'Museo Sans Cyrl 500'
+                    margin-bottom: 21px
+                    letter-spacing: -0.24px
+                &_contact
+                    list-style: none
+                    margin-bottom: 32px
+                    position: relative
+                    padding-left: 28px
+                    li
+                        margin-bottom: 20px
+                        a
+                            text-decoration: none
+                            color: #00a0df
+                            &::before
+                                position: absolute
+                                content: ""
+                                left: 0
+                                background: url('https://turanwater.com/assets/img/phone.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                        &:last-child
+                            a
+                                color: black
+                                &::before
+                                    background: url('https://turanwater.com/assets/img/email.svg') no-repeat 0/contain
+                &_second_title
+                    margin-bottom: 21px
+                    font-family: 'Museo Sans Cyrl 500'
+                    letter-spacing: -0.24px
+                &_second_contact
+                    padding-left: 28px
+                    position: relative
+                    list-style: none
+                    li
+                        margin-bottom: 21px
+                        a
+                            text-decoration: none
+                            font-size: 14px
+                            color: #002856
+                            font-family: 'Museo Sans Cyrl 300'
+                        &:first-child
+                            a
+                                color: #00a0df
+                            &::before
+                                position: absolute
+                                content: ""
+                                background: url('https://turanwater.com/assets/img/phone.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                                left: 0
+                        &:last-child
+                            &::before
+                                position: absolute
+                                content: ""
+                                background: url('https://turanwater.com/assets/img/email.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                                left: 0    
+
+        
+
+
+
+                
