@@ -610,28 +610,102 @@ header .container .header_logo:hover {
 }
 
 .healthy {
-  background: #ecf7ff;
-  max-height: 760px;
+  min-height: 760px;
   position: relative;
 }
 
 .healthy_slide {
-  min-height: 760px;
-  display: flex;
+  height: 760px;
+  position: absolute;
 }
 
 .healthy_slide_text {
-  max-width: 50%;
-  height: 100%;
-  padding: 160px 80px 102px 50px;
+  background-color: #ecf7fe;
+  padding: 54px 80px 102px 50px;
+  height: 604px;
+  width: 627px;
   display: flex;
   flex-direction: column;
-  position: relative;
+  border: 1px solid red;
 }
 
-.healthy_slide_picture {
-  width: 50%;
-  height: 100%;
+.healthy_slide_text_count {
+  font-size: 50px;
+  font-family: 'Montserrat Alternates',sans-serif;
+  color: #00a0df;
+}
+
+.healthy_slide_text_count span {
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px #00a0df;
+}
+
+.healthy_slide_text_title {
+  margin-top: 30px;
+  color: #002856;
+  font-size: 59px;
+  letter-spacing: -0.24px;
+  font-family: 'Montserrat Alternates';
+}
+
+.healthy_slide_text_descr {
+  font-family: 'Museo Sans Cyrl 300',sans-serif;
+  color: #182438;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.healthy_slide_text_button {
+  margin-top: 300px;
+}
+
+.healthy_slide_text_button button {
+  width: 48px;
+  height: 48px;
+  margin-right: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #00a0df;
+}
+
+.healthy_slide_text_button button img {
+  width: 8px;
+  height: 12px;
+}
+
+.healthy_slide_text_button button:hover {
+  background: #00a0df;
+}
+
+.healthy_slide_text a {
+  display: block;
+  width: 210px;
+  height: 210px;
+  text-align: center;
+  position: absolute;
+  left: 580px;
+  z-index: 5;
+  top: 570px;
+  margin-top: -56px;
+}
+
+.healthy_slide_text a span {
+  color: #002856;
+  position: absolute;
+  top: 90px;
+  left: 55px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.healthy_slide_text a::before {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 210px;
+  background: url("../img/main_page/btn_wave_dark.svg") no-repeat;
 }
 
 .healthy_slide_picture img {
@@ -641,4 +715,245 @@ header .container .header_logo:hover {
   width: 100%;
   height: 100%;
   transform-origin: left;
+  object-fit: cover;
+}
+
+.bottles {
+  padding: 50px 15px 102px 15px;
+  margin: 0 auto;
+  width: 1310px;
+}
+
+.bottles_title {
+  max-width: 400px;
+  margin-bottom: -130px;
+  color: #002856;
+  font-size: 60px;
+  letter-spacing: -0.24px;
+  font-family: 'Montserrat Alternates',serif;
+}
+
+.bottles_wrap_slider {
+  width: 670px;
+  height: 670px;
+  margin-left: 280px;
+}
+
+.bottles_wrap_elements {
+  width: 180px;
+  margin-left: 60px;
+  height: 584px;
+}
+
+.bottles_wrap_elements_m1 {
+  margin-left: auto;
+  width: 92px;
+  height: 92px;
+  margin-bottom: 24px;
+}
+
+.bottles_wrap_elements_m1_text {
+  display: none;
+}
+
+.bottles_wrap_elements_m1_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.bottles_wrap_elements_m1_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.bottles_wrap_elements_m1_icon_name {
+  margin-top: 25px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.bottles_wrap_elements_m1_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.bottles_wrap_elements_m2 {
+  width: 92px;
+  height: 92px;
+  margin-bottom: 24px;
+}
+
+.bottles_wrap_elements_m2_text {
+  display: none;
+}
+
+.bottles_wrap_elements_m2_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.bottles_wrap_elements_m2_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.bottles_wrap_elements_m2_icon_name {
+  margin-top: 25px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.bottles_wrap_elements_m2_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.bottles_wrap_elements_m3 {
+  margin-left: auto;
+  width: 112px;
+  height: 112px;
+  margin-bottom: 24px;
+}
+
+.bottles_wrap_elements_m3_text {
+  display: none;
+}
+
+.bottles_wrap_elements_m3_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.bottles_wrap_elements_m3_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.bottles_wrap_elements_m3_icon_name {
+  margin-top: 35px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.bottles_wrap_elements_m3_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.bottles_wrap_elements_m4 {
+  width: 94px;
+  height: 94px;
+  margin-bottom: 24px;
+}
+
+.bottles_wrap_elements_m4_text {
+  display: none;
+}
+
+.bottles_wrap_elements_m4_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.bottles_wrap_elements_m4_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.bottles_wrap_elements_m4_icon_name {
+  margin-top: 29px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.bottles_wrap_elements_m4_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.bottles_wrap_elements_m5 {
+  margin-left: auto;
+  width: 74px;
+  height: 74px;
+  margin-bottom: 24px;
+}
+
+.bottles_wrap_elements_m5_text {
+  display: none;
+}
+
+.bottles_wrap_elements_m5_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.bottles_wrap_elements_m5_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.bottles_wrap_elements_m5_icon_name {
+  margin-top: 15px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.bottles_wrap_elements_m5_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
 }
