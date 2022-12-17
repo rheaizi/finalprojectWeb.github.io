@@ -1,389 +1,928 @@
-/* line 1, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
 body {
   font-family: 'Museo Sans Cyrl 300';
   letter-spacing: -0.24px;
-  position: relative; }
+  position: relative;
+}
 
-/* line 5, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
 header {
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 30;
-  transition: opacity 0.5s ease-out; }
-  /* line 11, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  header::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    width: 100%;
-    height: 100px;
-    transition: all .5s ease-out;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) -59.23%, rgba(0, 0, 0, 0)); }
-  /* line 23, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  header .container .header_logo {
-    position: absolute;
-    z-index: 35;
-    display: block;
-    left: 46.5%;
-    background: url("../img/main_page/logo/logo_turan_white.svg") no-repeat 50%/cover;
-    width: 106px;
-    height: 54px; }
-    /* line 31, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    header .container .header_logo:hover {
-      background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover; }
+  transition: opacity 0.5s ease-out;
+}
 
-/* line 33, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100px;
+  transition: all .5s ease-out;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) -59.23%, rgba(0, 0, 0, 0));
+}
+
+header .container .header_logo {
+  position: absolute;
+  z-index: 35;
+  display: block;
+  left: 46.5%;
+  background: url("../img/main_page/logo/logo_turan_white.svg") no-repeat 50%/cover;
+  width: 106px;
+  height: 54px;
+}
+
+header .container .header_logo:hover {
+  background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover;
+}
+
 nav {
   padding-top: 86px;
   padding-bottom: 50px;
-  color: #fff; }
-  /* line 37, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  nav .container {
-    padding: 0 15px;
-    margin: 0 56.6px; }
-    /* line 40, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    nav .container ul {
-      display: flex;
-      letter-spacing: -0.24px;
-      list-style: none; }
-      /* line 45, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-      nav .container ul li a {
-        text-decoration: none;
-        color: #fff;
-        margin-right: 25px; }
-      /* line 49, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-      nav .container ul li .main_page {
-        z-index: 36;
-        opacity: 0.5;
-        position: relative; }
-        /* line 53, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-        nav .container ul li .main_page:hover {
-          opacity: 1.0; }
-        /* line 55, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-        nav .container ul li .main_page::after {
-          content: "";
-          display: block;
-          width: 4px;
-          height: 4px;
-          border-radius: 50%;
-          background: #fff;
-          position: absolute;
-          left: 50px;
-          top: 8px;
-          margin: 0 12px; }
+  color: #fff;
+}
 
-/* line 67, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
+nav .container {
+  padding: 0 15px;
+  margin: 0 56.6px;
+}
+
+nav .container ul {
+  display: flex;
+  letter-spacing: -0.24px;
+  list-style: none;
+}
+
+nav .container ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 25px;
+}
+
+nav .container ul li .main_page {
+  z-index: 36;
+  opacity: 0.5;
+  position: relative;
+}
+
+nav .container ul li .main_page:hover {
+  opacity: 1.0;
+}
+
+nav .container ul li .main_page::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  margin: 0 12px;
+}
+
 .born {
-  min-height: 100vh; }
-  /* line 69, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .born img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover; }
-  /* line 78, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .born_content {
-    padding: 113px 107px; }
-    /* line 80, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .born_content_title {
-      color: #fff;
-      font-size: 60px;
-      margin-bottom: 30px;
-      font-family: 'Montserrat Alternates'; }
-    /* line 85, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .born_content_descr {
-      margin-bottom: 20px;
-      font-size: 16px;
-      color: #ffffff; }
-    /* line 89, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .born_content_subtitle {
-      font-size: 150px;
-      font-family: 'Montserrat Alternates';
-      color: rgba(0, 0, 0, 0);
-      -webkit-text-stroke: 1px #fff; }
-  /* line 94, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .born_wave {
-    background: url(" https://turanwater.com/assets/img/bottom-wave.svg") repeat-x 0 100%/contain;
-    position: absolute;
-    top: 732px;
-    width: 100%;
-    height: 18px; }
+  min-height: 100vh;
+}
 
-/* line 100, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
+.born img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.born_content {
+  padding: 113px 107px;
+}
+
+.born_content_title {
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat Alternates';
+}
+
+.born_content_descr {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.born_content_subtitle {
+  font-size: 150px;
+  font-family: 'Montserrat Alternates';
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px #fff;
+}
+
+.born_wave {
+  background: url(" https://turanwater.com/assets/img/bottom-wave.svg") repeat-x 0 100%/contain;
+  position: absolute;
+  top: 746px;
+  width: 100%;
+  height: 18px;
+}
+
 .origin {
-  padding: 0 0 80px 0; }
-  /* line 102, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .origin .container {
-    padding: 0 15px;
-    margin: 0 76px; }
-  /* line 105, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .origin_title {
-    font-family: 'Montserrat Alternates';
-    font-size: 66px;
-    margin-bottom: 64px;
-    color: #002856; }
-    /* line 110, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .origin_title span {
-      color: #00a0df; }
-  /* line 112, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .origin_text {
-    max-width: 385px;
-    margin-left: auto;
-    margin-top: 110px;
-    line-height: 29px; }
-  /* line 117, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .origin_mountain {
-    max-width: 755px;
-    height: 395px;
-    background: url("https://turanwater.com/assets/img/mount.svg") no-repeat center top 25%/contain;
-    margin: -25px auto 0;
-    position: relative; }
-    /* line 123, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .origin_mountain_depth {
-      font-family: 'Museo Sans Cyrl 500';
-      display: flex;
-      flex-direction: column; }
-      /* line 127, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-      .origin_mountain_depth span {
-        font-size: 50px;
-        font-family: 'Montserrat Alternates';
-        color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke: 1px #00a0df; }
-    /* line 132, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .origin_mountain_temp {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      font-family: 'Museo Sans Cyrl 500';
-      right: 60px;
-      bottom: 0;
-      margin-left: auto;
-      color: #182438; }
-      /* line 141, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-      .origin_mountain_temp span {
-        font-size: 50px;
-        font-family: 'Montserrat Alternates';
-        color: rgba(0, 0, 0, 0);
-        -webkit-text-stroke: 1px #00a0df; }
+  padding: 0 0 80px 0;
+}
 
-/* line 147, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
+.origin .container {
+  padding: 0 15px;
+  margin: 0 76px;
+}
+
+.origin_title {
+  font-family: 'Montserrat Alternates';
+  font-size: 66px;
+  margin-bottom: 64px;
+  color: #002856;
+}
+
+.origin_title span {
+  color: #00a0df;
+}
+
+.origin_text {
+  max-width: 385px;
+  margin-left: auto;
+  margin-top: 110px;
+  line-height: 29px;
+}
+
+.origin_mountain {
+  max-width: 755px;
+  height: 395px;
+  background: url("https://turanwater.com/assets/img/mount.svg") no-repeat center top 25%/contain;
+  margin: -25px auto 0;
+  position: relative;
+}
+
+.origin_mountain_depth {
+  font-family: 'Museo Sans Cyrl 500';
+  display: flex;
+  flex-direction: column;
+}
+
+.origin_mountain_depth span {
+  font-size: 50px;
+  font-family: 'Montserrat Alternates';
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px #00a0df;
+}
+
+.origin_mountain_temp {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-family: 'Museo Sans Cyrl 500';
+  right: 60px;
+  bottom: 0;
+  margin-left: auto;
+  color: #182438;
+}
+
+.origin_mountain_temp span {
+  font-size: 50px;
+  font-family: 'Montserrat Alternates';
+  color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke: 1px #00a0df;
+}
+
 .prepare {
   background: url("../img/about_page/tamshy_bg.jpg") no-repeat 50%/cover;
   padding: 150px 0;
-  position: relative; }
-  /* line 151, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .prepare .container {
-    margin: 0 56.6px;
-    padding: 0 15px; }
-  /* line 154, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .prepare .row {
-    display: flex; }
-  /* line 156, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .prepare_wrap {
-    margin-left: 30px; }
-    /* line 158, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .prepare_wrap_title {
-      margin-top: 50px;
-      max-width: 410px;
-      margin-bottom: 32px;
-      color: #fff;
-      font-size: 60px;
-      font-family: 'Montserrat Alternates'; }
-    /* line 165, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .prepare_wrap_descr {
-      line-height: 29px;
-      max-width: 410px;
-      color: #fff; }
-  /* line 169, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .prepare_picture {
-    margin-left: 380px; }
+  position: relative;
+}
 
-/* line 172, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
+.prepare .container {
+  margin: 0 56.6px;
+  padding: 0 15px;
+}
+
+.prepare .row {
+  display: flex;
+}
+
+.prepare_wrap {
+  margin-left: 30px;
+}
+
+.prepare_wrap_title {
+  margin-top: 50px;
+  max-width: 410px;
+  margin-bottom: 32px;
+  color: #fff;
+  font-size: 60px;
+  font-family: 'Montserrat Alternates';
+}
+
+.prepare_wrap_descr {
+  line-height: 29px;
+  max-width: 410px;
+  color: #fff;
+}
+
+.prepare_picture {
+  margin-left: 380px;
+}
+
 .ozon {
   padding: 110px 30px;
-  position: relative; }
-  /* line 175, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .ozon .container {
-    margin: 0 56.6px;
-    padding: 0 15px; }
-  /* line 178, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .ozon_row {
-    display: flex; }
-  /* line 181, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .ozon_turan_img img {
-    padding: 0 15px;
-    max-width: 400px;
-    object-fit: contain; }
-  /* line 185, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .ozon_wrap {
-    margin-left: 114px; }
-    /* line 187, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .ozon_wrap_title {
-      font-family: 'Montserrat Alternates';
-      color: #002856;
-      font-size: 60px;
-      margin-bottom: 34px; }
-    /* line 192, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .ozon_wrap_descr {
-      max-width: 600px;
-      line-height: 29px;
-      color: #182438;
-      margin-bottom: 95px; }
-    /* line 197, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .ozon_wrap_img {
-      width: 100%;
-      max-width: 280px; }
+  position: relative;
+}
 
-/* line 200, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
+.ozon .container {
+  margin: 0 56.6px;
+  padding: 0 15px;
+}
+
+.ozon_row {
+  display: flex;
+}
+
+.ozon_turan_img img {
+  padding: 0 15px;
+  max-width: 400px;
+  object-fit: contain;
+}
+
+.ozon_wrap {
+  margin-left: 114px;
+}
+
+.ozon_wrap_title {
+  font-family: 'Montserrat Alternates';
+  color: #002856;
+  font-size: 60px;
+  margin-bottom: 34px;
+}
+
+.ozon_wrap_descr {
+  max-width: 600px;
+  line-height: 29px;
+  color: #182438;
+  margin-bottom: 95px;
+}
+
+.ozon_wrap_img {
+  width: 100%;
+  max-width: 280px;
+}
+
 .bottling {
-  padding: 40px 0; }
-  /* line 202, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .bottling .container {
-    padding: 0 115px; }
-  /* line 204, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .bottling .row {
-    width: 1310px;
-    display: flex; }
-  /* line 207, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .bottling_title {
-    width: 25%;
-    margin-right: 25px;
-    font-family: 'Montserrat Alternates';
-    color: #002856;
-    line-height: 19.2px;
-    font-size: 60px; }
-  /* line 214, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .bottling_wrap {
-    width: 75%; }
-    /* line 216, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .bottling_wrap_descr {
-      max-width: 560px;
-      color: #182438;
-      margin-bottom: 55px; }
-    /* line 220, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .bottling_wrap_hour {
-      font-size: 50px;
-      -webkit-text-stroke: 1px #00a0df;
-      font-family: 'Montserrat Alternates';
-      color: rgba(0, 0, 0, 0);
-      line-height: 28px; }
+  padding: 40px 0;
+}
 
-/* line 226, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
+.bottling .container {
+  padding: 0 115px;
+}
+
+.bottling .row {
+  width: 1310px;
+  display: flex;
+}
+
+.bottling_title {
+  width: 25%;
+  margin-right: 25px;
+  font-family: 'Montserrat Alternates';
+  color: #002856;
+  line-height: 19.2px;
+  font-size: 60px;
+}
+
+.bottling_wrap {
+  width: 75%;
+}
+
+.bottling_wrap_descr {
+  max-width: 560px;
+  color: #182438;
+  margin-bottom: 55px;
+}
+
+.bottling_wrap_hour {
+  font-size: 50px;
+  -webkit-text-stroke: 1px #00a0df;
+  font-family: 'Montserrat Alternates';
+  color: rgba(0, 0, 0, 0);
+  line-height: 28px;
+}
+
+.bottling_slider {
+  height: 500px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.bottling_slider_path {
+  display: flex;
+  position: relative;
+  transition: all ease 1s;
+}
+
+.bottling_slider_path img {
+  height: 500px;
+  margin: 0 15px;
+  float: left;
+}
+
+.bottling_slider_path::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .control {
   margin-top: 50px;
   padding: 165px 0;
-  background: url(../img/about_page/double_control_bg.jpg) no-repeat 50%/cover; }
-  /* line 230, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .control .container {
-    padding: 0 100px; }
-  /* line 232, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .control .row {
-    display: flex;
-    width: 1310px;
-    color: #fff; }
-  /* line 236, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .control_right {
-    padding: 0 15px;
-    width: 50%; }
-    /* line 239, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .control_right_title {
-      margin-bottom: 34px;
-      font-size: 60px;
-      font-family: 'Montserrat Alternates'; }
-    /* line 243, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .control_right_descr {
-      line-height: 29px;
-      max-width: 460px; }
-  /* line 246, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-  .control_left {
-    padding: 0 15px;
-    width: 50%; }
-    /* line 249, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .control_left_title {
-      margin-bottom: 34px;
-      font-size: 60px;
-      font-family: 'Montserrat Alternates';
-      margin-left: 35px; }
-    /* line 254, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-    .control_left_calendar {
-      line-height: 20px; }
-      /* line 256, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-      .control_left_calendar li {
-        list-style: none;
-        padding-left: 60px;
-        margin-bottom: 30px; }
-        /* line 260, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-        .control_left_calendar li p {
-          max-width: 480px; }
-      /* line 262, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-      .control_left_calendar_first {
-        position: relative; }
-        /* line 264, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-        .control_left_calendar_first_title {
-          text-transform: uppercase;
-          font-family: 'Museo Sans Cyrl 500';
-          margin-bottom: 5px; }
-        /* line 268, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-        .control_left_calendar_first_days {
-          position: absolute;
-          background: url("https://turanwater.com/assets/img/calendar.svg") no-repeat 50%/contain;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          font-size: 16px;
-          width: 39px;
-          height: 35px;
-          padding-top: 8px;
-          left: 0;
-          top: -13px; }
-      /* line 280, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-      .control_left_calendar_second {
-        position: relative; }
-        /* line 282, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-        .control_left_calendar_second_title {
-          text-transform: uppercase;
-          font-family: 'Museo Sans Cyrl 500';
-          margin-bottom: 5px; }
-        /* line 286, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-        .control_left_calendar_second_days {
-          position: absolute;
-          background: url("https://turanwater.com/assets/img/calendar.svg") no-repeat 50%/contain;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          font-size: 16px;
-          width: 39px;
-          height: 35px;
-          padding-top: 8px;
-          left: 0;
-          top: -13px; }
-      /* line 298, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-      .control_left_calendar_third {
-        position: relative; }
-        /* line 300, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-        .control_left_calendar_third_title {
-          text-transform: uppercase;
-          font-family: 'Museo Sans Cyrl 500';
-          margin-bottom: 5px; }
-        /* line 304, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/about_turan.sass */
-        .control_left_calendar_third_days {
-          position: absolute;
-          background: url("https://turanwater.com/assets/img/calendar.svg") no-repeat 50%/contain;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          font-size: 16px;
-          width: 39px;
-          height: 35px;
-          padding-top: 8px;
-          left: 0;
-          top: -13px; }
+  background: url(../img/about_page/double_control_bg.jpg) no-repeat 50%/cover;
+}
 
-/*# sourceMappingURL=about_turan.css.map */
+.control .container {
+  padding: 0 100px;
+}
+
+.control .row {
+  display: flex;
+  width: 1310px;
+  color: #fff;
+}
+
+.control_right {
+  padding: 0 15px;
+  width: 50%;
+}
+
+.control_right_title {
+  margin-bottom: 34px;
+  font-size: 60px;
+  font-family: 'Montserrat Alternates';
+}
+
+.control_right_descr {
+  line-height: 29px;
+  max-width: 460px;
+}
+
+.control_left {
+  padding: 0 15px;
+  width: 50%;
+}
+
+.control_left_title {
+  margin-bottom: 34px;
+  font-size: 60px;
+  font-family: 'Montserrat Alternates';
+  margin-left: 35px;
+}
+
+.control_left_calendar {
+  line-height: 20px;
+}
+
+.control_left_calendar li {
+  list-style: none;
+  padding-left: 60px;
+  margin-bottom: 30px;
+}
+
+.control_left_calendar li p {
+  max-width: 480px;
+}
+
+.control_left_calendar_first {
+  position: relative;
+}
+
+.control_left_calendar_first_title {
+  text-transform: uppercase;
+  font-family: 'Museo Sans Cyrl 500';
+  margin-bottom: 5px;
+}
+
+.control_left_calendar_first_days {
+  position: absolute;
+  background: url("https://turanwater.com/assets/img/calendar.svg") no-repeat 50%/contain;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  width: 39px;
+  height: 35px;
+  padding-top: 8px;
+  left: 0;
+  top: -13px;
+}
+
+.control_left_calendar_second {
+  position: relative;
+}
+
+.control_left_calendar_second_title {
+  text-transform: uppercase;
+  font-family: 'Museo Sans Cyrl 500';
+  margin-bottom: 5px;
+}
+
+.control_left_calendar_second_days {
+  position: absolute;
+  background: url("https://turanwater.com/assets/img/calendar.svg") no-repeat 50%/contain;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  width: 39px;
+  height: 35px;
+  padding-top: 8px;
+  left: 0;
+  top: -13px;
+}
+
+.control_left_calendar_third {
+  position: relative;
+}
+
+.control_left_calendar_third_title {
+  text-transform: uppercase;
+  font-family: 'Museo Sans Cyrl 500';
+  margin-bottom: 5px;
+}
+
+.control_left_calendar_third_days {
+  position: absolute;
+  background: url("https://turanwater.com/assets/img/calendar.svg") no-repeat 50%/contain;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  width: 39px;
+  height: 35px;
+  padding-top: 8px;
+  left: 0;
+  top: -13px;
+}
+
+.composition {
+  padding-top: 112px;
+  padding-bottom: 96px;
+  position: relative;
+}
+
+.composition .container {
+  padding: 0 80px;
+}
+
+.composition_img {
+  position: absolute;
+  right: 100px;
+  top: 230px;
+  width: 285px;
+}
+
+.composition_wrap_content {
+  padding-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.composition_wrap_content_title {
+  margin-left: -20px;
+  font-size: 150px;
+  margin-bottom: 48px;
+  -webkit-text-stroke: 1px #00a0df;
+  font-family: 'Montserrat Alternates';
+  color: rgba(0, 0, 0, 0);
+}
+
+.composition_wrap_content_descr {
+  margin-right: 40px;
+  max-width: 365px;
+  line-height: 28px;
+}
+
+.composition_wrap_content_descr p {
+  margin-bottom: 32px;
+  color: #182438;
+}
+
+.composition_wrap_content_elements {
+  width: 350px;
+  margin: 0 auto 0 40px;
+  height: 329px;
+}
+
+.composition_wrap_content_elements_m1 {
+  margin: 0;
+  width: 92px;
+  height: 92px;
+  margin-bottom: 24px;
+}
+
+.composition_wrap_content_elements_m1_text {
+  display: none;
+}
+
+.composition_wrap_content_elements_m1_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.composition_wrap_content_elements_m1_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.composition_wrap_content_elements_m1_icon_name {
+  margin-top: 25px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.composition_wrap_content_elements_m1_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.composition_wrap_content_elements_m2 {
+  width: 92px;
+  height: 92px;
+  margin: -50px 0 0 auto;
+}
+
+.composition_wrap_content_elements_m2_text {
+  display: none;
+}
+
+.composition_wrap_content_elements_m2_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.composition_wrap_content_elements_m2_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.composition_wrap_content_elements_m2_icon_name {
+  margin-top: 25px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.composition_wrap_content_elements_m2_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.composition_wrap_content_elements_m3 {
+  margin: -30px auto 0 90px;
+  width: 112px;
+  height: 112px;
+}
+
+.composition_wrap_content_elements_m3_text {
+  display: none;
+}
+
+.composition_wrap_content_elements_m3_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.composition_wrap_content_elements_m3_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.composition_wrap_content_elements_m3_icon_name {
+  margin-top: 35px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.composition_wrap_content_elements_m3_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.composition_wrap_content_elements_m4 {
+  width: 94px;
+  height: 94px;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+.composition_wrap_content_elements_m4_text {
+  display: none;
+}
+
+.composition_wrap_content_elements_m4_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.composition_wrap_content_elements_m4_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.composition_wrap_content_elements_m4_icon_name {
+  margin-top: 29px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.composition_wrap_content_elements_m4_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+.composition_wrap_content_elements_m5 {
+  margin: -55px 40px 0 auto;
+  margin-left: 236px;
+  width: 74px;
+  height: 74px;
+}
+
+.composition_wrap_content_elements_m5_text {
+  display: none;
+}
+
+.composition_wrap_content_elements_m5_icon {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #dff1fd;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  line-height: 19.2px;
+}
+
+.composition_wrap_content_elements_m5_icon:hover {
+  border: 1px solid #00a0df;
+}
+
+.composition_wrap_content_elements_m5_icon_name {
+  margin-top: 15px;
+  font-size: 24px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.composition_wrap_content_elements_m5_icon_subname {
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+footer {
+  padding: 48px 0 32px 0;
+  background: #dff1fd;
+}
+
+footer .container {
+  margin: 0 65px;
+  padding: 0 15px;
+}
+
+footer .container .row {
+  display: flex;
+}
+
+footer .container .row_logo {
+  width: 327px;
+  padding: 0 15px;
+}
+
+footer .container .row_product {
+  width: 327px;
+  padding: 0 15px;
+}
+
+footer .container .row_product_list {
+  list-style: none;
+}
+
+footer .container .row_product_list li {
+  margin-bottom: 20.8px;
+}
+
+footer .container .row_product_list li a {
+  text-decoration: none;
+  font-family: 'Museo Sans Cyrl 500',sans-serif;
+  color: #182438;
+  font-size: 14px;
+  letter-spacing: -0.24px;
+}
+
+footer .container .row_product_socials {
+  margin-left: 40px;
+}
+
+footer .container .row_product_socials a img {
+  height: 22px;
+  width: 22px;
+}
+
+footer .container .row_product_socials a:first-child {
+  margin-right: 30px;
+}
+
+footer .container .row_main_office {
+  width: 327px;
+  padding: 0 15px;
+  position: relative;
+}
+
+footer .container .row_main_office p {
+  font-family: 'Museo Sans Cyrl 500';
+}
+
+footer .container .row_main_office ul {
+  padding-left: 28px;
+  position: relative;
+  list-style: none;
+}
+
+footer .container .row_main_office ul li {
+  margin-bottom: 10px;
+}
+
+footer .container .row_main_office ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #002856;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+footer .container .row_main_office ul li:first-child a {
+  color: #00a0df;
+}
+
+footer .container .row_main_office ul li:first-child::before {
+  position: absolute;
+  content: "";
+  background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+  left: 0;
+}
+
+footer .container .row_main_office ul li:last-child::before {
+  position: absolute;
+  content: "";
+  background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+  left: 0;
+}
+
+footer .container .row_office {
+  font-family: 'Museo Sans Cyrl 300';
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+footer .container .row_office_title {
+  font-family: 'Museo Sans Cyrl 500';
+  margin-bottom: 21px;
+  letter-spacing: -0.24px;
+}
+
+footer .container .row_office_contact {
+  list-style: none;
+  margin-bottom: 32px;
+  position: relative;
+  padding-left: 28px;
+}
+
+footer .container .row_office_contact li {
+  margin-bottom: 20px;
+}
+
+footer .container .row_office_contact li a {
+  text-decoration: none;
+  color: #00a0df;
+}
+
+footer .container .row_office_contact li a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+}
+
+footer .container .row_office_contact li:last-child a {
+  color: black;
+}
+
+footer .container .row_office_contact li:last-child a::before {
+  background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
+}
+
+footer .container .row_office_second_title {
+  margin-bottom: 21px;
+  font-family: 'Museo Sans Cyrl 500';
+  letter-spacing: -0.24px;
+}
+
+footer .container .row_office_second_contact {
+  padding-left: 28px;
+  position: relative;
+  list-style: none;
+}
+
+footer .container .row_office_second_contact li {
+  margin-bottom: 21px;
+}
+
+footer .container .row_office_second_contact li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #002856;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+footer .container .row_office_second_contact li:first-child a {
+  color: #00a0df;
+}
+
+footer .container .row_office_second_contact li:first-child::before {
+  position: absolute;
+  content: "";
+  background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+  left: 0;
+}
+
+footer .container .row_office_second_contact li:last-child::before {
+  position: absolute;
+  content: "";
+  background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+  left: 0;
+}
