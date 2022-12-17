@@ -75,6 +75,13 @@ header .container .header_logo:hover {
   max-width: 880px;
   color: #002856;
   margin-bottom: 64px;
+  transform: translate(0px,120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.single_turan_title._active{
+  transform: translate(0px,0px);
+  opacity: 1;
 }
 
 .single_turan_descr {
@@ -84,7 +91,15 @@ header .container .header_logo:hover {
   letter-spacing: -0.24px;
   color: #182438;
   max-width: 629px;
+  transform: translate(0px,120%);
+  opacity: 0;
+  transition: all 0.8s ease 0.4s;
 }
+.single_turan_descr._active{
+  transform: translate(0px,0px);
+  opacity: 1;
+}
+
 
 .zhumbaktas {
   background: url("../img/main_page/kol.jpg") 0 0/100% auto no-repeat;
