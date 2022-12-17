@@ -1,0 +1,79 @@
+/* line 1, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+body {
+  font-family: 'Museo Sans Cyrl 300';
+  letter-spacing: -0.24px;
+  position: relative; }
+
+/* line 5, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+  transition: opacity 0.5s ease-out; }
+  /* line 11, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+  header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100px;
+    transition: all .5s ease-out;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) -59.23%, rgba(0, 0, 0, 0)); }
+  /* line 23, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+  header .container .header_logo {
+    position: absolute;
+    z-index: 35;
+    display: block;
+    left: 46.5%;
+    background: url("../img/main_page/logo/logo_turan_white.svg") no-repeat 50%/cover;
+    width: 106px;
+    height: 54px; }
+    /* line 31, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+    header .container .header_logo:hover {
+      background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover; }
+
+/* line 33, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+nav {
+  padding-top: 86px;
+  padding-bottom: 50px;
+  color: #fff; }
+  /* line 37, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+  nav .container {
+    padding: 0 15px;
+    margin: 0 56.6px; }
+    /* line 40, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+    nav .container ul {
+      display: flex;
+      letter-spacing: -0.24px;
+      list-style: none; }
+      /* line 45, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+      nav .container ul li a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 25px; }
+      /* line 49, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+      nav .container ul li .main_page {
+        z-index: 36;
+        opacity: 0.5;
+        position: relative; }
+        /* line 53, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+        nav .container ul li .main_page:hover {
+          opacity: 1.0; }
+        /* line 55, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+        nav .container ul li .main_page::after {
+          content: "";
+          display: block;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          left: 50px;
+          top: 8px;
+          margin: 0 12px; }
+
+/*# sourceMappingURL=useful.css.map */

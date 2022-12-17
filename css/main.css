@@ -1,1305 +1,1128 @@
+/* line 2, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 header {
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 30;
-  transition: opacity 0.5s ease-out;
-}
+  transition: opacity 0.5s ease-out; }
+  /* line 8, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    height: 160px;
+    transition: all .5s ease-out;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) -59.23%, rgba(0, 0, 0, 0)); }
+  /* line 20, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  header .container .header_logo {
+    position: absolute;
+    z-index: 35;
+    display: block;
+    left: 46.5%;
+    background: url("../img/main_page/logo/logo_turan_white.svg") no-repeat 50%/cover;
+    width: 106px;
+    height: 54px; }
+    /* line 28, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    header .container .header_logo:hover {
+      background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover; }
 
-header::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 9;
-  width: 100%;
-  height: 160px;
-  transition: all .5s ease-out;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) -59.23%, rgba(0, 0, 0, 0));
-}
-
-header .container .header_logo {
-  position: absolute;
-  z-index: 35;
-  display: block;
-  left: 46.5%;
-  background: url("../img/main_page/logo/logo_turan_white.svg") no-repeat 50%/cover;
-  width: 106px;
-  height: 54px;
-}
-
-header .container .header_logo:hover {
-  background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover;
-}
-
+/* line 31, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .main {
-  min-height: 100vh;
-}
+  min-height: 100vh; }
+  /* line 33, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .main_tau {
+    width: 100%;
+    height: 96vh; }
+  /* line 36, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .main_bottle {
+    background: url("../img/main_page/botelke.png") no-repeat bottom/contain;
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    top: 115px;
+    z-index: 6; }
+  /* line 43, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .main_tolkyn {
+    width: 100%;
+    height: 15vh;
+    background: url("../img/main_page/botelke_background.png") no-repeat top/cover;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    bottom: 0; }
 
-.main_tau {
-  width: 100%;
-  height: 96vh;
-}
-
-.main_bottle {
-  background: url("../img/main_page/botelke.png") no-repeat bottom/contain;
-  width: 100%;
-  height: 85%;
-  position: absolute;
-  top: 115px;
-  z-index: 6;
-}
-
-.main_tolkyn {
-  width: 100%;
-  height: 15vh;
-  background: url("../img/main_page/botelke_background.png") no-repeat top/cover;
-  position: absolute;
-  z-index: 5;
-  left: 0;
-  bottom: 0;
-}
-
+/* line 51, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .single_turan {
   margin-left: 90px;
   padding: 4rem 15px;
-  background-color: white;
-}
+  background-color: white; }
+  /* line 55, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .single_turan_title {
+    font-family: 'Montserrat Alternates';
+    font-size: 65px;
+    line-height: 1.5;
+    letter-spacing: -0.99px;
+    max-width: 880px;
+    color: #002856;
+    margin-bottom: 64px; }
+  /* line 63, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .single_turan_descr {
+    font-family: 'Museo Sans Cyrl 300';
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.24px;
+    color: #182438;
+    max-width: 629px; }
 
-.single_turan_title {
-  font-family: 'Montserrat Alternates';
-  font-size: 65px;
-  line-height: 1.5;
-  letter-spacing: -0.99px;
-  max-width: 880px;
-  color: #002856;
-  margin-bottom: 64px;
-}
-
-.single_turan_descr {
-  font-family: 'Museo Sans Cyrl 300';
-  font-size: 16px;
-  line-height: 28px;
-  letter-spacing: -0.24px;
-  color: #182438;
-  max-width: 629px;
-}
-
+/* line 70, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .zhumbaktas {
   background: url("../img/main_page/kol.jpg") 0 0/100% auto no-repeat;
   height: 571px;
   padding: 102px 0 160px;
   z-index: 14;
-  position: relative;
-}
+  position: relative; }
+  /* line 76, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .zhumbaktas_content {
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 81, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .zhumbaktas_content_title {
+      font-family: 'Montserrat Alternates';
+      font-size: 60px;
+      line-height: 72px;
+      letter-spacing: -0.9px;
+      color: #FFFFFF; }
+    /* line 87, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .zhumbaktas_content_descr {
+      font-family: 'Museo Sans Cyrl 300';
+      font-size: 16px;
+      width: 390px;
+      margin-top: 40px;
+      margin-left: auto;
+      line-height: 28px;
+      letter-spacing: -0.24px;
+      color: #FFFFFF; }
+    /* line 97, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .zhumbaktas_content a {
+      display: block;
+      width: 210px;
+      height: 210px;
+      text-align: center;
+      position: relative; }
+      /* line 103, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .zhumbaktas_content a span {
+        color: white;
+        font-size: 14px;
+        position: absolute;
+        top: 90px;
+        left: 55px;
+        font-family: 'Museo Sans Cyrl 300'; }
+      /* line 110, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .zhumbaktas_content a::before {
+        content: "";
+        display: block;
+        width: 210px;
+        height: 210px;
+        background: url("../img/main_page/btn_wave_white.svg") no-repeat; }
+  /* line 116, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .zhumbaktas_banner {
+    width: 40%;
+    height: 80%;
+    background: url("../img/main_page/banner_bottle.png") 0 0/cover no-repeat;
+    position: absolute;
+    top: 166px; }
 
-.zhumbaktas_content {
-  max-width: 650px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.zhumbaktas_content_title {
-  font-family: 'Montserrat Alternates';
-  font-size: 60px;
-  line-height: 72px;
-  letter-spacing: -0.9px;
-  color: #FFFFFF;
-}
-
-.zhumbaktas_content_descr {
-  font-family: 'Museo Sans Cyrl 300';
-  font-size: 16px;
-  width: 390px;
-  margin-top: 40px;
-  margin-left: auto;
-  line-height: 28px;
-  letter-spacing: -0.24px;
-  color: #FFFFFF;
-}
-
-.zhumbaktas_content a {
-  display: block;
-  width: 210px;
-  height: 210px;
-  text-align: center;
-  position: relative;
-}
-
-.zhumbaktas_content a span {
-  color: white;
-  font-size: 14px;
-  position: absolute;
-  top: 90px;
-  left: 55px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.zhumbaktas_content a::before {
-  content: "";
-  display: block;
-  width: 210px;
-  height: 210px;
-  background: url("../img/main_page/btn_wave_white.svg") no-repeat;
-}
-
-.zhumbaktas_banner {
-  width: 40%;
-  height: 80%;
-  background: url("../img/main_page/banner_bottle.png") 0 0/cover no-repeat;
-  position: absolute;
-  top: 166px;
-}
-
+/* line 122, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .nature_minerals {
   border: 1px solid red;
   padding-top: 102px;
   padding-bottom: 96px;
-  min-height: 584px;
-}
+  min-height: 584px; }
+  /* line 127, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .nature_minerals .container {
+    padding: 0 15px;
+    margin: 0 70px; }
+  /* line 130, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .nature_minerals_wrap {
+    display: flex; }
+    /* line 132, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .nature_minerals_wrap_left {
+      padding-left: 7%;
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap; }
+      /* line 137, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .nature_minerals_wrap_left_title {
+        font-family: 'Montserrat Alternates';
+        font-size: 120px;
+        line-height: 132px;
+        letter-spacing: -1.8px;
+        color: white;
+        -webkit-text-stroke: 1px #00a0df;
+        margin-bottom: 48px; }
+        /* line 145, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .nature_minerals_wrap_left_title_top {
+          margin-left: -7%; }
+      /* line 147, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .nature_minerals_wrap_left_descr {
+        font-family: 'Museo Sans Cyrl 300';
+        color: #182438;
+        font-size: 16px;
+        max-width: 365px;
+        letter-spacing: -0.24px;
+        line-height: 1.75;
+        margin-bottom: 32px; }
+      /* line 155, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .nature_minerals_wrap_left a {
+        display: block;
+        width: 210px;
+        height: 210px;
+        text-align: center;
+        position: relative;
+        margin-left: 70px; }
+        /* line 162, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .nature_minerals_wrap_left a span {
+          color: #002856;
+          position: absolute;
+          top: 90px;
+          left: 55px;
+          font-size: 14px;
+          font-family: 'Museo Sans Cyrl 300'; }
+        /* line 169, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .nature_minerals_wrap_left a::before {
+          content: "";
+          display: block;
+          width: 210px;
+          height: 210px;
+          background: url("../img/main_page/btn_wave_dark.svg") no-repeat; }
+    /* line 175, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .nature_minerals_wrap_right {
+      position: relative; }
+      /* line 177, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .nature_minerals_wrap_right_bottle {
+        position: absolute;
+        left: -260px;
+        top: 70px;
+        z-index: 15;
+        width: 260px;
+        height: 630px;
+        background: url("../img/main_page/composition_banner_bottle.png") no-repeat left 80% bottom;
+        background-size: 280px; }
+      /* line 186, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .nature_minerals_wrap_right_elements {
+        width: 180px;
+        margin-left: 60px;
+        height: 584px; }
+        /* line 190, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .nature_minerals_wrap_right_elements_m1 {
+          margin-left: auto;
+          width: 92px;
+          height: 92px;
+          margin-bottom: 24px; }
+          /* line 195, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m1_text {
+            display: none; }
+          /* line 197, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m1_icon {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #dff1fd;
+            border-radius: 50%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            line-height: 19.2px; }
+            /* line 208, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m1_icon:hover {
+              border: 1px solid #00a0df; }
+            /* line 210, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m1_icon_name {
+              margin-top: 25px;
+              font-size: 24px;
+              font-family: 'Museo Sans Cyrl 500';
+              font-weight: 700;
+              text-align: center;
+              margin-bottom: 5px; }
+            /* line 217, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m1_icon_subname {
+              text-align: center;
+              font-size: 12px;
+              font-family: 'Museo Sans Cyrl 300'; }
+        /* line 221, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .nature_minerals_wrap_right_elements_m2 {
+          width: 92px;
+          height: 92px;
+          margin-bottom: 24px; }
+          /* line 225, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m2_text {
+            display: none; }
+          /* line 227, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m2_icon {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #dff1fd;
+            border-radius: 50%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            line-height: 19.2px; }
+            /* line 238, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m2_icon:hover {
+              border: 1px solid #00a0df; }
+            /* line 240, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m2_icon_name {
+              margin-top: 25px;
+              font-size: 24px;
+              font-family: 'Museo Sans Cyrl 500';
+              font-weight: 700;
+              text-align: center;
+              margin-bottom: 5px; }
+            /* line 247, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m2_icon_subname {
+              text-align: center;
+              font-size: 12px;
+              font-family: 'Museo Sans Cyrl 300'; }
+        /* line 251, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .nature_minerals_wrap_right_elements_m3 {
+          margin-left: auto;
+          width: 112px;
+          height: 112px;
+          margin-bottom: 24px; }
+          /* line 256, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m3_text {
+            display: none; }
+          /* line 258, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m3_icon {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #dff1fd;
+            border-radius: 50%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            line-height: 19.2px; }
+            /* line 269, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m3_icon:hover {
+              border: 1px solid #00a0df; }
+            /* line 271, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m3_icon_name {
+              margin-top: 35px;
+              font-size: 24px;
+              font-family: 'Museo Sans Cyrl 500';
+              font-weight: 700;
+              text-align: center;
+              margin-bottom: 5px; }
+            /* line 278, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m3_icon_subname {
+              text-align: center;
+              font-size: 12px;
+              font-family: 'Museo Sans Cyrl 300'; }
+        /* line 282, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .nature_minerals_wrap_right_elements_m4 {
+          width: 94px;
+          height: 94px;
+          margin-bottom: 24px; }
+          /* line 286, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m4_text {
+            display: none; }
+          /* line 288, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m4_icon {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #dff1fd;
+            border-radius: 50%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            line-height: 19.2px; }
+            /* line 299, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m4_icon:hover {
+              border: 1px solid #00a0df; }
+            /* line 301, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m4_icon_name {
+              margin-top: 29px;
+              font-size: 24px;
+              font-family: 'Museo Sans Cyrl 500';
+              font-weight: 700;
+              text-align: center;
+              margin-bottom: 5px; }
+            /* line 308, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m4_icon_subname {
+              text-align: center;
+              font-size: 12px;
+              font-family: 'Museo Sans Cyrl 300'; }
+        /* line 312, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .nature_minerals_wrap_right_elements_m5 {
+          margin-left: auto;
+          width: 74px;
+          height: 74px;
+          margin-bottom: 24px; }
+          /* line 317, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m5_text {
+            display: none; }
+          /* line 319, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .nature_minerals_wrap_right_elements_m5_icon {
+            width: 100%;
+            height: 100%;
+            border: 1px solid #dff1fd;
+            border-radius: 50%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            line-height: 19.2px; }
+            /* line 330, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m5_icon:hover {
+              border: 1px solid #00a0df; }
+            /* line 332, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m5_icon_name {
+              margin-top: 15px;
+              font-size: 24px;
+              font-family: 'Museo Sans Cyrl 500';
+              font-weight: 700;
+              text-align: center;
+              margin-bottom: 5px; }
+            /* line 339, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .nature_minerals_wrap_right_elements_m5_icon_subname {
+              text-align: center;
+              font-size: 12px;
+              font-family: 'Museo Sans Cyrl 300'; }
 
-.nature_minerals .container {
-  padding: 0 15px;
-  margin: 0 70px;
-}
-
-.nature_minerals_wrap {
-  display: flex;
-}
-
-.nature_minerals_wrap_left {
-  padding-left: 7%;
-  width: 70%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nature_minerals_wrap_left_title {
-  font-family: 'Montserrat Alternates';
-  font-size: 120px;
-  line-height: 132px;
-  letter-spacing: -1.8px;
-  color: white;
-  -webkit-text-stroke: 1px #00a0df;
-  margin-bottom: 48px;
-}
-
-.nature_minerals_wrap_left_title_top {
-  margin-left: -7%;
-}
-
-.nature_minerals_wrap_left_descr {
-  font-family: 'Museo Sans Cyrl 300';
-  color: #182438;
-  font-size: 16px;
-  max-width: 365px;
-  letter-spacing: -0.24px;
-  line-height: 1.75;
-  margin-bottom: 32px;
-}
-
-.nature_minerals_wrap_left a {
-  display: block;
-  width: 210px;
-  height: 210px;
-  text-align: center;
-  position: relative;
-  margin-left: 70px;
-}
-
-.nature_minerals_wrap_left a span {
-  color: #002856;
-  position: absolute;
-  top: 90px;
-  left: 55px;
-  font-size: 14px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.nature_minerals_wrap_left a::before {
-  content: "";
-  display: block;
-  width: 210px;
-  height: 210px;
-  background: url("../img/main_page/btn_wave_dark.svg") no-repeat;
-}
-
-.nature_minerals_wrap_right {
-  position: relative;
-}
-
-.nature_minerals_wrap_right_bottle {
-  position: absolute;
-  left: -260px;
-  top: 70px;
-  z-index: 15;
-  width: 260px;
-  height: 630px;
-  background: url("../img/main_page/composition_banner_bottle.png") no-repeat left 80% bottom;
-  background-size: 280px;
-}
-
-.nature_minerals_wrap_right_elements {
-  width: 180px;
-  margin-left: 60px;
-  height: 584px;
-}
-
-.nature_minerals_wrap_right_elements_m1 {
-  margin-left: auto;
-  width: 92px;
-  height: 92px;
-  margin-bottom: 24px;
-}
-
-.nature_minerals_wrap_right_elements_m1_text {
-  display: none;
-}
-
-.nature_minerals_wrap_right_elements_m1_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.nature_minerals_wrap_right_elements_m1_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.nature_minerals_wrap_right_elements_m1_icon_name {
-  margin-top: 25px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.nature_minerals_wrap_right_elements_m1_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.nature_minerals_wrap_right_elements_m2 {
-  width: 92px;
-  height: 92px;
-  margin-bottom: 24px;
-}
-
-.nature_minerals_wrap_right_elements_m2_text {
-  display: none;
-}
-
-.nature_minerals_wrap_right_elements_m2_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.nature_minerals_wrap_right_elements_m2_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.nature_minerals_wrap_right_elements_m2_icon_name {
-  margin-top: 25px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.nature_minerals_wrap_right_elements_m2_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.nature_minerals_wrap_right_elements_m3 {
-  margin-left: auto;
-  width: 112px;
-  height: 112px;
-  margin-bottom: 24px;
-}
-
-.nature_minerals_wrap_right_elements_m3_text {
-  display: none;
-}
-
-.nature_minerals_wrap_right_elements_m3_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.nature_minerals_wrap_right_elements_m3_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.nature_minerals_wrap_right_elements_m3_icon_name {
-  margin-top: 35px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.nature_minerals_wrap_right_elements_m3_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.nature_minerals_wrap_right_elements_m4 {
-  width: 94px;
-  height: 94px;
-  margin-bottom: 24px;
-}
-
-.nature_minerals_wrap_right_elements_m4_text {
-  display: none;
-}
-
-.nature_minerals_wrap_right_elements_m4_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.nature_minerals_wrap_right_elements_m4_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.nature_minerals_wrap_right_elements_m4_icon_name {
-  margin-top: 29px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.nature_minerals_wrap_right_elements_m4_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.nature_minerals_wrap_right_elements_m5 {
-  margin-left: auto;
-  width: 74px;
-  height: 74px;
-  margin-bottom: 24px;
-}
-
-.nature_minerals_wrap_right_elements_m5_text {
-  display: none;
-}
-
-.nature_minerals_wrap_right_elements_m5_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.nature_minerals_wrap_right_elements_m5_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.nature_minerals_wrap_right_elements_m5_icon_name {
-  margin-top: 15px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.nature_minerals_wrap_right_elements_m5_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
+/* line 343, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .balance {
   background: url("../img/main_page/balance_bg.jpg") no-repeat 50%;
   border: 1px solid red;
   color: #ecf7fe;
   padding-top: 128px;
-  padding-bottom: 25px;
-}
+  padding-bottom: 25px; }
+  /* line 349, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .balance .container {
+    margin: 0 90px;
+    padding: 0 15px; }
+  /* line 352, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .balance_wrap {
+    display: flex;
+    flex-wrap: wrap; }
+    /* line 355, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .balance_wrap a {
+      display: block;
+      width: 210px;
+      height: 210px;
+      text-align: center;
+      position: absolute;
+      margin-left: 72px;
+      margin-top: -50px; }
+      /* line 363, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .balance_wrap a span {
+        color: #ecf7fe;
+        position: absolute;
+        top: 90px;
+        left: 55px;
+        font-size: 14px;
+        font-family: 'Museo Sans Cyrl 300'; }
+      /* line 370, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .balance_wrap a::before {
+        content: "";
+        display: block;
+        width: 210px;
+        height: 210px;
+        background: url("../img/main_page/btn_wave_white.svg") no-repeat; }
+    /* line 376, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .balance_wrap_title {
+      margin-left: 250px;
+      max-width: 1000px;
+      margin-bottom: 64px;
+      color: #fff;
+      font-size: 60px;
+      letter-spacing: -0.24px;
+      font-family: 'Montserrat Alternates'; }
+    /* line 384, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .balance_wrap_text {
+      margin-top: 60px;
+      max-width: 460px;
+      font-size: 16px;
+      line-height: 28px;
+      font-family: 'Museo Sans Cyrl 300';
+      color: #ecf7fe; }
+    /* line 391, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .balance_wrap_numbers {
+      display: flex;
+      flex-direction: column;
+      font-size: 60px;
+      color: rgba(0, 0, 0, 0);
+      font-family: 'Montserrat Alternates';
+      -webkit-text-stroke: 1px #ecf7fe;
+      letter-spacing: -0.24px;
+      margin-left: auto;
+      margin-right: 20%; }
+      /* line 401, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .balance_wrap_numbers span {
+        font-size: 150px; }
 
-.balance .container {
-  margin: 0 90px;
-  padding: 0 15px;
-}
-
-.balance_wrap {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.balance_wrap a {
-  display: block;
-  width: 210px;
-  height: 210px;
-  text-align: center;
-  position: absolute;
-  margin-left: 72px;
-  margin-top: -50px;
-}
-
-.balance_wrap a span {
-  color: #ecf7fe;
-  position: absolute;
-  top: 90px;
-  left: 55px;
-  font-size: 14px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.balance_wrap a::before {
-  content: "";
-  display: block;
-  width: 210px;
-  height: 210px;
-  background: url("../img/main_page/btn_wave_white.svg") no-repeat;
-}
-
-.balance_wrap_title {
-  margin-left: 250px;
-  max-width: 1000px;
-  margin-bottom: 64px;
-  color: #fff;
-  font-size: 60px;
-  letter-spacing: -0.24px;
-  font-family: 'Montserrat Alternates';
-}
-
-.balance_wrap_text {
-  margin-top: 60px;
-  max-width: 460px;
-  font-size: 16px;
-  line-height: 28px;
-  font-family: 'Museo Sans Cyrl 300';
-  color: #ecf7fe;
-}
-
-.balance_wrap_numbers {
-  display: flex;
-  flex-direction: column;
-  font-size: 60px;
-  color: rgba(0, 0, 0, 0);
-  font-family: 'Montserrat Alternates';
-  -webkit-text-stroke: 1px #ecf7fe;
-  letter-spacing: -0.24px;
-  margin-left: auto;
-  margin-right: 20%;
-}
-
-.balance_wrap_numbers span {
-  font-size: 150px;
-}
-
+/* line 404, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .space {
-  padding: 128px 0 80px;
-}
+  padding: 128px 0 80px; }
+  /* line 406, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .space .container {
+    padding: 0 15px;
+    margin: 0 56.6px; }
+  /* line 409, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .space_wrap {
+    display: flex; }
+    /* line 412, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .space_wrap_texts_title {
+      margin-bottom: 48px;
+      color: #002856;
+      font-size: 60px;
+      letter-spacing: -0.24px;
+      font-family: 'Montserrat Alternates'; }
+    /* line 418, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .space_wrap_texts_descr {
+      max-width: 600px;
+      letter-spacing: -0.24px;
+      color: #182438;
+      font-family: 'Museo Sans Cyrl 300';
+      font-size: 16px;
+      line-height: 28px; }
+    /* line 425, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .space_wrap_photos {
+      width: 100%;
+      max-width: 370px; }
+      /* line 429, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .space_wrap_photos_kosmonavt img {
+        width: 226px;
+        height: auto;
+        object-fit: contain;
+        margin-left: auto;
+        display: block; }
+    /* line 435, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .space_wrap a {
+      display: block;
+      width: 210px;
+      height: 210px;
+      text-align: center;
+      position: relative;
+      margin-top: -56px; }
+      /* line 442, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .space_wrap a span {
+        color: #002856;
+        position: absolute;
+        top: 90px;
+        left: 55px;
+        font-size: 14px;
+        font-family: 'Museo Sans Cyrl 300'; }
+      /* line 449, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .space_wrap a::before {
+        content: "";
+        display: block;
+        width: 210px;
+        height: 210px;
+        background: url("../img/main_page/btn_wave_dark.svg") no-repeat; }
 
-.space .container {
-  padding: 0 15px;
-  margin: 0 56.6px;
-}
-
-.space_wrap {
-  display: flex;
-}
-
-.space_wrap_texts_title {
-  margin-bottom: 48px;
-  color: #002856;
-  font-size: 60px;
-  letter-spacing: -0.24px;
-  font-family: 'Montserrat Alternates';
-}
-
-.space_wrap_texts_descr {
-  max-width: 600px;
-  letter-spacing: -0.24px;
-  color: #182438;
-  font-family: 'Museo Sans Cyrl 300';
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.space_wrap_photos {
-  width: 100%;
-  max-width: 370px;
-}
-
-.space_wrap_photos_kosmonavt img {
-  width: 226px;
-  height: auto;
-  object-fit: contain;
-  margin-left: auto;
-  display: block;
-}
-
-.space_wrap a {
-  display: block;
-  width: 210px;
-  height: 210px;
-  text-align: center;
-  position: relative;
-  margin-top: -56px;
-}
-
-.space_wrap a span {
-  color: #002856;
-  position: absolute;
-  top: 90px;
-  left: 55px;
-  font-size: 14px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.space_wrap a::before {
-  content: "";
-  display: block;
-  width: 210px;
-  height: 210px;
-  background: url("../img/main_page/btn_wave_dark.svg") no-repeat;
-}
-
+/* line 455, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .healthy {
   min-height: 760px;
-  position: relative;
-}
+  position: relative; }
+  /* line 458, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .healthy_slide {
+    height: 760px;
+    position: absolute; }
+    /* line 461, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .healthy_slide_text {
+      background-color: #ecf7fe;
+      padding: 54px 80px 102px 50px;
+      height: 604px;
+      width: 627px;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid red; }
+      /* line 469, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .healthy_slide_text_count {
+        font-size: 50px;
+        font-family: 'Montserrat Alternates',sans-serif;
+        color: #00a0df; }
+        /* line 473, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .healthy_slide_text_count span {
+          color: rgba(0, 0, 0, 0);
+          -webkit-text-stroke: 1px #00a0df; }
+      /* line 476, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .healthy_slide_text_title {
+        margin-top: 30px;
+        color: #002856;
+        font-size: 59px;
+        letter-spacing: -0.24px;
+        font-family: 'Montserrat Alternates'; }
+      /* line 482, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .healthy_slide_text_descr {
+        font-family: 'Museo Sans Cyrl 300',sans-serif;
+        color: #182438;
+        font-size: 16px;
+        line-height: 28px; }
+      /* line 487, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .healthy_slide_text_button {
+        margin-top: 300px; }
+        /* line 489, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .healthy_slide_text_button button {
+          width: 48px;
+          height: 48px;
+          margin-right: 24px;
+          cursor: pointer;
+          border-radius: 50%;
+          background: rgba(0, 0, 0, 0);
+          border: 1px solid #00a0df; }
+          /* line 497, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .healthy_slide_text_button button img {
+            width: 8px;
+            height: 12px; }
+          /* line 500, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .healthy_slide_text_button button:hover {
+            background: #00a0df; }
+      /* line 502, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .healthy_slide_text a {
+        display: block;
+        width: 210px;
+        height: 210px;
+        text-align: center;
+        position: absolute;
+        left: 580px;
+        z-index: 5;
+        top: 570px;
+        margin-top: -56px; }
+        /* line 512, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .healthy_slide_text a span {
+          color: #002856;
+          position: absolute;
+          top: 90px;
+          left: 55px;
+          font-size: 14px;
+          font-weight: bold;
+          font-family: 'Museo Sans Cyrl 300'; }
+        /* line 520, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .healthy_slide_text a::before {
+          content: "";
+          display: block;
+          width: 210px;
+          height: 210px;
+          background: url("../img/main_page/btn_wave_dark.svg") no-repeat; }
+    /* line 527, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .healthy_slide_picture img {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      transform-origin: left;
+      object-fit: cover; }
 
-.healthy_slide {
-  height: 760px;
-  position: absolute;
-}
-
-.healthy_slide_text {
-  background-color: #ecf7fe;
-  padding: 54px 80px 102px 50px;
-  height: 604px;
-  width: 627px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
-}
-
-.healthy_slide_text_count {
-  font-size: 50px;
-  font-family: 'Montserrat Alternates',sans-serif;
-  color: #00a0df;
-}
-
-.healthy_slide_text_count span {
-  color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #00a0df;
-}
-
-.healthy_slide_text_title {
-  margin-top: 30px;
-  color: #002856;
-  font-size: 59px;
-  letter-spacing: -0.24px;
-  font-family: 'Montserrat Alternates';
-}
-
-.healthy_slide_text_descr {
-  font-family: 'Museo Sans Cyrl 300',sans-serif;
-  color: #182438;
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.healthy_slide_text_button {
-  margin-top: 300px;
-}
-
-.healthy_slide_text_button button {
-  width: 48px;
-  height: 48px;
-  margin-right: 24px;
-  cursor: pointer;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0);
-  border: 1px solid #00a0df;
-}
-
-.healthy_slide_text_button button img {
-  width: 8px;
-  height: 12px;
-}
-
-.healthy_slide_text_button button:hover {
-  background: #00a0df;
-}
-
-.healthy_slide_text a {
-  display: block;
-  width: 210px;
-  height: 210px;
-  text-align: center;
-  position: absolute;
-  left: 580px;
-  z-index: 5;
-  top: 570px;
-  margin-top: -56px;
-}
-
-.healthy_slide_text a span {
-  color: #002856;
-  position: absolute;
-  top: 90px;
-  left: 55px;
-  font-size: 14px;
-  font-weight: bold;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.healthy_slide_text a::before {
-  content: "";
-  display: block;
-  width: 210px;
-  height: 210px;
-  background: url("../img/main_page/btn_wave_dark.svg") no-repeat;
-}
-
-.healthy_slide_picture img {
-  position: absolute;
-  left: 100%;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transform-origin: left;
-  object-fit: cover;
-}
-
+/* line 535, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .bottles {
   padding: 50px 15px 102px 15px;
   margin: 0 auto;
-  width: 1310px;
-}
+  width: 1310px; }
+  /* line 539, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .bottles_title {
+    max-width: 400px;
+    margin-bottom: -130px;
+    color: #002856;
+    font-size: 60px;
+    letter-spacing: -0.24px;
+    font-family: 'Montserrat Alternates',serif; }
+  /* line 546, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .bottles_wrap {
+    display: flex; }
+    /* line 548, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .bottles_wrap_slider {
+      position: relative;
+      width: 670px;
+      height: 600px;
+      margin-left: 320px; }
+      /* line 553, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .bottles_wrap_slider_items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px; }
+        /* line 558, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_slider_items_left img {
+          width: 120px; }
+        /* line 560, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_slider_items_left_text {
+          text-align: center;
+          font-family: 'Museo Sans Cyrl 300';
+          letter-spacing: -0.24px; }
+          /* line 564, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_slider_items_left_text span {
+            color: #00a0df; }
+        /* line 566, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_slider_items_center {
+          margin-top: -40px; }
+          /* line 568, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_slider_items_center img {
+            width: 150px; }
+          /* line 570, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_slider_items_center_text {
+            text-align: center;
+            font-family: 'Museo Sans Cyrl 300';
+            letter-spacing: -0.24px; }
+            /* line 574, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            .bottles_wrap_slider_items_center_text span {
+              color: #00a0df; }
+        /* line 577, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_slider_items_right img {
+          width: 120px; }
+        /* line 579, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_slider_items_right_text {
+          text-align: center;
+          font-family: 'Museo Sans Cyrl 300';
+          letter-spacing: -0.24px; }
+          /* line 583, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_slider_items_right_text span {
+            color: #00a0df; }
+      /* line 585, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .bottles_wrap_slider_backgrounds {
+        position: absolute;
+        z-index: -1;
+        top: 125px;
+        left: 160px; }
+        /* line 590, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_slider_backgrounds_zhemis {
+          width: 350px;
+          height: 350px;
+          display: block;
+          margin: 0 auto;
+          border-radius: 50%; }
+    /* line 596, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .bottles_wrap_elements {
+      width: 180px;
+      margin-left: 180px;
+      height: 584px; }
+      /* line 600, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .bottles_wrap_elements_m1 {
+        margin-left: auto;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 24px; }
+        /* line 605, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m1_text {
+          display: none; }
+        /* line 607, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m1_icon {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #dff1fd;
+          border-radius: 50%;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          line-height: 19.2px; }
+          /* line 618, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m1_icon:hover {
+            border: 1px solid #00a0df; }
+          /* line 620, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m1_icon_name {
+            margin-top: 25px;
+            font-size: 24px;
+            font-family: 'Museo Sans Cyrl 500';
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 5px; }
+          /* line 627, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m1_icon_subname {
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Museo Sans Cyrl 300'; }
+      /* line 631, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .bottles_wrap_elements_m2 {
+        width: 92px;
+        height: 92px;
+        margin-bottom: 24px; }
+        /* line 635, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m2_text {
+          display: none; }
+        /* line 637, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m2_icon {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #dff1fd;
+          border-radius: 50%;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          line-height: 19.2px; }
+          /* line 648, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m2_icon:hover {
+            border: 1px solid #00a0df; }
+          /* line 650, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m2_icon_name {
+            margin-top: 25px;
+            font-size: 24px;
+            font-family: 'Museo Sans Cyrl 500';
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 5px; }
+          /* line 657, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m2_icon_subname {
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Museo Sans Cyrl 300'; }
+      /* line 661, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .bottles_wrap_elements_m3 {
+        margin-left: auto;
+        width: 112px;
+        height: 112px;
+        margin-bottom: 24px; }
+        /* line 666, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m3_text {
+          display: none; }
+        /* line 668, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m3_icon {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #dff1fd;
+          border-radius: 50%;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          line-height: 19.2px; }
+          /* line 679, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m3_icon:hover {
+            border: 1px solid #00a0df; }
+          /* line 681, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m3_icon_name {
+            margin-top: 35px;
+            font-size: 24px;
+            font-family: 'Museo Sans Cyrl 500';
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 5px; }
+          /* line 688, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m3_icon_subname {
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Museo Sans Cyrl 300'; }
+      /* line 692, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .bottles_wrap_elements_m4 {
+        width: 94px;
+        height: 94px;
+        margin-bottom: 24px; }
+        /* line 696, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m4_text {
+          display: none; }
+        /* line 698, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m4_icon {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #dff1fd;
+          border-radius: 50%;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          line-height: 19.2px; }
+          /* line 709, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m4_icon:hover {
+            border: 1px solid #00a0df; }
+          /* line 711, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m4_icon_name {
+            margin-top: 29px;
+            font-size: 24px;
+            font-family: 'Museo Sans Cyrl 500';
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 5px; }
+          /* line 718, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m4_icon_subname {
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Museo Sans Cyrl 300'; }
+      /* line 722, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .bottles_wrap_elements_m5 {
+        margin-left: auto;
+        width: 74px;
+        height: 74px;
+        margin-bottom: 24px; }
+        /* line 727, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m5_text {
+          display: none; }
+        /* line 729, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_m5_icon {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #dff1fd;
+          border-radius: 50%;
+          padding: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          cursor: pointer;
+          line-height: 19.2px; }
+          /* line 740, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m5_icon:hover {
+            border: 1px solid #00a0df; }
+          /* line 742, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m5_icon_name {
+            margin-top: 15px;
+            font-size: 24px;
+            font-family: 'Museo Sans Cyrl 500';
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 5px; }
+          /* line 749, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          .bottles_wrap_elements_m5_icon_subname {
+            text-align: center;
+            font-size: 12px;
+            font-family: 'Museo Sans Cyrl 300'; }
+      /* line 753, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .bottles_wrap_elements_link {
+        font-family: 'Museo Sans Cyrl 500',serif;
+        font-size: 14px;
+        color: #00a0df;
+        padding-right: 25px;
+        position: relative;
+        text-decoration: none; }
+        /* line 760, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        .bottles_wrap_elements_link::after {
+          position: absolute;
+          content: "";
+          background: url("https://turanwater.com/assets/img/arrow_color.svg") no-repeat;
+          width: 10px;
+          height: 12px;
+          top: 20%;
+          right: 5px; }
 
-.bottles_title {
-  max-width: 400px;
-  margin-bottom: -130px;
-  color: #002856;
-  font-size: 60px;
-  letter-spacing: -0.24px;
-  font-family: 'Montserrat Alternates',serif;
-}
-
-.bottles_wrap {
-  display: flex;
-}
-
-.bottles_wrap_slider {
-  position: relative;
-  width: 670px;
-  height: 600px;
-  margin-left: 320px;
-}
-
-.bottles_wrap_slider_items {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 60px;
-}
-
-.bottles_wrap_slider_items_left img {
-  width: 120px;
-}
-
-.bottles_wrap_slider_items_left_text {
-  text-align: center;
-  font-family: 'Museo Sans Cyrl 300';
-  letter-spacing: -0.24px;
-}
-
-.bottles_wrap_slider_items_left_text span {
-  color: #00a0df;
-}
-
-.bottles_wrap_slider_items_center {
-  margin-top: -40px;
-}
-
-.bottles_wrap_slider_items_center img {
-  width: 150px;
-}
-
-.bottles_wrap_slider_items_center_text {
-  text-align: center;
-  font-family: 'Museo Sans Cyrl 300';
-  letter-spacing: -0.24px;
-}
-
-.bottles_wrap_slider_items_center_text span {
-  color: #00a0df;
-}
-
-.bottles_wrap_slider_items_right img {
-  width: 120px;
-}
-
-.bottles_wrap_slider_items_right_text {
-  text-align: center;
-  font-family: 'Museo Sans Cyrl 300';
-  letter-spacing: -0.24px;
-}
-
-.bottles_wrap_slider_items_right_text span {
-  color: #00a0df;
-}
-
-.bottles_wrap_slider_backgrounds {
-  position: absolute;
-  z-index: -1;
-  top: 125px;
-  left: 160px;
-}
-
-.bottles_wrap_slider_backgrounds_zhemis {
-  width: 350px;
-  height: 350px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-}
-
-.bottles_wrap_elements {
-  width: 180px;
-  margin-left: 180px;
-  height: 584px;
-}
-
-.bottles_wrap_elements_m1 {
-  margin-left: auto;
-  width: 92px;
-  height: 92px;
-  margin-bottom: 24px;
-}
-
-.bottles_wrap_elements_m1_text {
-  display: none;
-}
-
-.bottles_wrap_elements_m1_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.bottles_wrap_elements_m1_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.bottles_wrap_elements_m1_icon_name {
-  margin-top: 25px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.bottles_wrap_elements_m1_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.bottles_wrap_elements_m2 {
-  width: 92px;
-  height: 92px;
-  margin-bottom: 24px;
-}
-
-.bottles_wrap_elements_m2_text {
-  display: none;
-}
-
-.bottles_wrap_elements_m2_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.bottles_wrap_elements_m2_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.bottles_wrap_elements_m2_icon_name {
-  margin-top: 25px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.bottles_wrap_elements_m2_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.bottles_wrap_elements_m3 {
-  margin-left: auto;
-  width: 112px;
-  height: 112px;
-  margin-bottom: 24px;
-}
-
-.bottles_wrap_elements_m3_text {
-  display: none;
-}
-
-.bottles_wrap_elements_m3_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.bottles_wrap_elements_m3_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.bottles_wrap_elements_m3_icon_name {
-  margin-top: 35px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.bottles_wrap_elements_m3_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.bottles_wrap_elements_m4 {
-  width: 94px;
-  height: 94px;
-  margin-bottom: 24px;
-}
-
-.bottles_wrap_elements_m4_text {
-  display: none;
-}
-
-.bottles_wrap_elements_m4_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.bottles_wrap_elements_m4_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.bottles_wrap_elements_m4_icon_name {
-  margin-top: 29px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.bottles_wrap_elements_m4_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.bottles_wrap_elements_m5 {
-  margin-left: auto;
-  width: 74px;
-  height: 74px;
-  margin-bottom: 24px;
-}
-
-.bottles_wrap_elements_m5_text {
-  display: none;
-}
-
-.bottles_wrap_elements_m5_icon {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #dff1fd;
-  border-radius: 50%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  line-height: 19.2px;
-}
-
-.bottles_wrap_elements_m5_icon:hover {
-  border: 1px solid #00a0df;
-}
-
-.bottles_wrap_elements_m5_icon_name {
-  margin-top: 15px;
-  font-size: 24px;
-  font-family: 'Museo Sans Cyrl 500';
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 5px;
-}
-
-.bottles_wrap_elements_m5_icon_subname {
-  text-align: center;
-  font-size: 12px;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-.bottles_wrap_elements_link {
-  font-family: 'Museo Sans Cyrl 500',serif;
-  font-size: 14px;
-  color: #00a0df;
-  padding-right: 25px;
-  position: relative;
-  text-decoration: none;
-}
-
-.bottles_wrap_elements_link::after {
-  position: absolute;
-  content: "";
-  background: url("https://turanwater.com/assets/img/arrow_color.svg") no-repeat;
-  width: 10px;
-  height: 12px;
-  top: 20%;
-  right: 5px;
-}
-
+/* line 769, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .glass_of_water .container {
   display: flex;
-  background-color: #ecf7fe;
-}
+  background-color: #ecf7fe; }
 
+/* line 773, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .glass_of_water_left img {
-  width: 1060px;
-}
+  width: 1060px; }
 
+/* line 775, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 .glass_of_water_right {
-  padding-left: 70px;
-}
+  padding-left: 70px; }
+  /* line 777, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .glass_of_water_right_count {
+    margin-top: 80px;
+    font-size: 50px;
+    font-family: 'Montserrat Alternates',sans-serif;
+    color: #00a0df; }
+    /* line 782, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .glass_of_water_right_count span {
+      color: rgba(0, 0, 0, 0);
+      -webkit-text-stroke: 1px #00a0df; }
+  /* line 785, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .glass_of_water_right_title {
+    max-width: 450px;
+    margin-top: 135px;
+    color: #002856;
+    font-size: 60px;
+    letter-spacing: -0.24px;
+    font-family: 'Montserrat Alternates'; }
+  /* line 792, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .glass_of_water_right_descr {
+    font-family: 'Montserrat Alternates';
+    color: #002856;
+    font-size: 24px;
+    line-height: 28px; }
+  /* line 797, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  .glass_of_water_right_button {
+    margin-top: 160px; }
+    /* line 799, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    .glass_of_water_right_button button {
+      width: 48px;
+      height: 48px;
+      margin-right: 24px;
+      cursor: pointer;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0);
+      border: 1px solid #00a0df; }
+      /* line 807, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .glass_of_water_right_button button img {
+        width: 8px;
+        height: 12px; }
+      /* line 810, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      .glass_of_water_right_button button:hover {
+        background: #00a0df; }
 
-.glass_of_water_right_count {
-  margin-top: 80px;
-  font-size: 50px;
-  font-family: 'Montserrat Alternates',sans-serif;
-  color: #00a0df;
-}
-
-.glass_of_water_right_count span {
-  color: rgba(0, 0, 0, 0);
-  -webkit-text-stroke: 1px #00a0df;
-}
-
-.glass_of_water_right_title {
-  max-width: 450px;
-  margin-top: 135px;
-  color: #002856;
-  font-size: 60px;
-  letter-spacing: -0.24px;
-  font-family: 'Montserrat Alternates';
-}
-
-.glass_of_water_right_descr {
-  font-family: 'Montserrat Alternates';
-  color: #002856;
-  font-size: 24px;
-  line-height: 28px;
-}
-
-.glass_of_water_right_button {
-  margin-top: 160px;
-}
-
-.glass_of_water_right_button button {
-  width: 48px;
-  height: 48px;
-  margin-right: 24px;
-  cursor: pointer;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0);
-  border: 1px solid #00a0df;
-}
-
-.glass_of_water_right_button button img {
-  width: 8px;
-  height: 12px;
-}
-
-.glass_of_water_right_button button:hover {
-  background: #00a0df;
-}
-
+/* line 812, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 footer {
-  padding: 48px 0 32px 0;
-}
+  padding: 48px 0 32px 0; }
+  /* line 814, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  footer .container {
+    margin: 0 65px;
+    padding: 0 15px; }
+    /* line 817, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    footer .container .row {
+      display: flex; }
+      /* line 819, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      footer .container .row_logo {
+        width: 327px;
+        padding: 0 15px; }
+      /* line 822, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      footer .container .row_product {
+        width: 327px;
+        padding: 0 15px; }
+        /* line 825, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        footer .container .row_product_list {
+          list-style: none; }
+          /* line 827, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          footer .container .row_product_list li {
+            margin-bottom: 20.8px; }
+            /* line 829, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_product_list li a {
+              text-decoration: none;
+              font-family: 'Museo Sans Cyrl 500',sans-serif;
+              color: #182438;
+              font-size: 14px;
+              letter-spacing: -0.24px; }
+        /* line 835, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        footer .container .row_product_socials {
+          margin-left: 40px; }
+          /* line 838, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          footer .container .row_product_socials a img {
+            height: 22px;
+            width: 22px; }
+          /* line 841, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          footer .container .row_product_socials a:first-child {
+            margin-right: 30px; }
+      /* line 843, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      footer .container .row_main_office {
+        width: 327px;
+        padding: 0 15px;
+        position: relative; }
+        /* line 847, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        footer .container .row_main_office p {
+          font-family: 'Museo Sans Cyrl 500'; }
+        /* line 849, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        footer .container .row_main_office ul {
+          padding-left: 28px;
+          position: relative;
+          list-style: none; }
+          /* line 853, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          footer .container .row_main_office ul li {
+            margin-bottom: 10px; }
+            /* line 855, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_main_office ul li a {
+              text-decoration: none;
+              font-size: 14px;
+              color: #002856;
+              font-family: 'Museo Sans Cyrl 300'; }
+            /* line 861, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_main_office ul li:first-child a {
+              color: #00a0df; }
+            /* line 863, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_main_office ul li:first-child::before {
+              position: absolute;
+              content: "";
+              background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
+              width: 18px;
+              height: 18px;
+              left: 0; }
+            /* line 871, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_main_office ul li:last-child::before {
+              position: absolute;
+              content: "";
+              background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
+              width: 18px;
+              height: 18px;
+              left: 0; }
+      /* line 879, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      footer .container .row_office {
+        font-family: 'Museo Sans Cyrl 300';
+        font-size: 14px;
+        padding: 0 15px; }
+        /* line 883, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        footer .container .row_office_title {
+          font-family: 'Museo Sans Cyrl 500';
+          margin-bottom: 21px;
+          letter-spacing: -0.24px; }
+        /* line 887, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        footer .container .row_office_contact {
+          list-style: none;
+          margin-bottom: 32px;
+          position: relative;
+          padding-left: 28px; }
+          /* line 892, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          footer .container .row_office_contact li {
+            margin-bottom: 20px; }
+            /* line 894, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_office_contact li a {
+              text-decoration: none;
+              color: #00a0df; }
+              /* line 897, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+              footer .container .row_office_contact li a::before {
+                position: absolute;
+                content: "";
+                left: 0;
+                background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
+                width: 18px;
+                height: 18px; }
+            /* line 905, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_office_contact li:last-child a {
+              color: black; }
+              /* line 907, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+              footer .container .row_office_contact li:last-child a::before {
+                background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain; }
+        /* line 909, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        footer .container .row_office_second_title {
+          margin-bottom: 21px;
+          font-family: 'Museo Sans Cyrl 500';
+          letter-spacing: -0.24px; }
+        /* line 913, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        footer .container .row_office_second_contact {
+          padding-left: 28px;
+          position: relative;
+          list-style: none; }
+          /* line 917, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          footer .container .row_office_second_contact li {
+            margin-bottom: 21px; }
+            /* line 919, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_office_second_contact li a {
+              text-decoration: none;
+              font-size: 14px;
+              color: #002856;
+              font-family: 'Museo Sans Cyrl 300'; }
+            /* line 925, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_office_second_contact li:first-child a {
+              color: #00a0df; }
+            /* line 927, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_office_second_contact li:first-child::before {
+              position: absolute;
+              content: "";
+              background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
+              width: 18px;
+              height: 18px;
+              left: 0; }
+            /* line 935, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            footer .container .row_office_second_contact li:last-child::before {
+              position: absolute;
+              content: "";
+              background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
+              width: 18px;
+              height: 18px;
+              left: 0; }
 
-footer .container {
-  margin: 0 65px;
-  padding: 0 15px;
-}
-
-footer .container .row {
-  display: flex;
-}
-
-footer .container .row_logo {
-  width: 327px;
-  padding: 0 15px;
-}
-
-footer .container .row_product {
-  width: 327px;
-  padding: 0 15px;
-}
-
-footer .container .row_product_list {
-  list-style: none;
-}
-
-footer .container .row_product_list li {
-  margin-bottom: 20.8px;
-}
-
-footer .container .row_product_list li a {
-  text-decoration: none;
-  font-family: 'Museo Sans Cyrl 500',sans-serif;
-  color: #182438;
-  font-size: 14px;
-  letter-spacing: -0.24px;
-}
-
-footer .container .row_product_socials {
-  margin-left: 40px;
-}
-
-footer .container .row_product_socials a img {
-  height: 22px;
-  width: 22px;
-}
-
-footer .container .row_product_socials a:first-child {
-  margin-right: 30px;
-}
-
-footer .container .row_main_office {
-  width: 327px;
-  padding: 0 15px;
-  position: relative;
-}
-
-footer .container .row_main_office p {
-  font-family: 'Museo Sans Cyrl 500';
-}
-
-footer .container .row_main_office ul {
-  padding-left: 28px;
-  position: relative;
-  list-style: none;
-}
-
-footer .container .row_main_office ul li {
-  margin-bottom: 10px;
-}
-
-footer .container .row_main_office ul li a {
-  text-decoration: none;
-  font-size: 14px;
-  color: #002856;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-footer .container .row_main_office ul li:first-child a {
-  color: #00a0df;
-}
-
-footer .container .row_main_office ul li:first-child::before {
-  position: absolute;
-  content: "";
-  background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
-  width: 18px;
-  height: 18px;
-  left: 0;
-}
-
-footer .container .row_main_office ul li:last-child::before {
-  position: absolute;
-  content: "";
-  background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
-  width: 18px;
-  height: 18px;
-  left: 0;
-}
-
-footer .container .row_office {
-  font-family: 'Museo Sans Cyrl 300';
-  font-size: 14px;
-  padding: 0 15px;
-}
-
-footer .container .row_office_title {
-  font-family: 'Museo Sans Cyrl 500';
-  margin-bottom: 21px;
-  letter-spacing: -0.24px;
-}
-
-footer .container .row_office_contact {
-  list-style: none;
-  margin-bottom: 32px;
-  position: relative;
-  padding-left: 28px;
-}
-
-footer .container .row_office_contact li {
-  margin-bottom: 20px;
-}
-
-footer .container .row_office_contact li a {
-  text-decoration: none;
-  color: #00a0df;
-}
-
-footer .container .row_office_contact li a::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
-  width: 18px;
-  height: 18px;
-}
-
-footer .container .row_office_contact li:last-child a {
-  color: black;
-}
-
-footer .container .row_office_contact li:last-child a::before {
-  background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
-}
-
-footer .container .row_office_second_title {
-  margin-bottom: 21px;
-  font-family: 'Museo Sans Cyrl 500';
-  letter-spacing: -0.24px;
-}
-
-footer .container .row_office_second_contact {
-  padding-left: 28px;
-  position: relative;
-  list-style: none;
-}
-
-footer .container .row_office_second_contact li {
-  margin-bottom: 21px;
-}
-
-footer .container .row_office_second_contact li a {
-  text-decoration: none;
-  font-size: 14px;
-  color: #002856;
-  font-family: 'Museo Sans Cyrl 300';
-}
-
-footer .container .row_office_second_contact li:first-child a {
-  color: #00a0df;
-}
-
-footer .container .row_office_second_contact li:first-child::before {
-  position: absolute;
-  content: "";
-  background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
-  width: 18px;
-  height: 18px;
-  left: 0;
-}
-
-footer .container .row_office_second_contact li:last-child::before {
-  position: absolute;
-  content: "";
-  background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
-  width: 18px;
-  height: 18px;
-  left: 0;
-}
+/*# sourceMappingURL=main.css.map */
