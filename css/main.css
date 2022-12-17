@@ -969,71 +969,72 @@ header {
 
 /* line 812, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
 footer {
+  background: #dff1fd;
   padding: 48px 0 32px 0; }
-  /* line 814, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+  /* line 815, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
   footer .container {
     margin: 0 65px;
     padding: 0 15px; }
-    /* line 817, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+    /* line 818, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
     footer .container .row {
       display: flex; }
-      /* line 819, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      /* line 820, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
       footer .container .row_logo {
         width: 327px;
         padding: 0 15px; }
-      /* line 822, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      /* line 823, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
       footer .container .row_product {
         width: 327px;
         padding: 0 15px; }
-        /* line 825, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        /* line 826, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
         footer .container .row_product_list {
           list-style: none; }
-          /* line 827, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          /* line 828, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
           footer .container .row_product_list li {
             margin-bottom: 20.8px; }
-            /* line 829, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 830, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_product_list li a {
               text-decoration: none;
               font-family: 'Museo Sans Cyrl 500',sans-serif;
               color: #182438;
               font-size: 14px;
               letter-spacing: -0.24px; }
-        /* line 835, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        /* line 836, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
         footer .container .row_product_socials {
           margin-left: 40px; }
-          /* line 838, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          /* line 839, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
           footer .container .row_product_socials a img {
             height: 22px;
             width: 22px; }
-          /* line 841, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          /* line 842, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
           footer .container .row_product_socials a:first-child {
             margin-right: 30px; }
-      /* line 843, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      /* line 844, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
       footer .container .row_main_office {
         width: 327px;
         padding: 0 15px;
         position: relative; }
-        /* line 847, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        /* line 848, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
         footer .container .row_main_office p {
           font-family: 'Museo Sans Cyrl 500'; }
-        /* line 849, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        /* line 850, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
         footer .container .row_main_office ul {
           padding-left: 28px;
           position: relative;
           list-style: none; }
-          /* line 853, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          /* line 854, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
           footer .container .row_main_office ul li {
             margin-bottom: 10px; }
-            /* line 855, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 856, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_main_office ul li a {
               text-decoration: none;
               font-size: 14px;
               color: #002856;
               font-family: 'Museo Sans Cyrl 300'; }
-            /* line 861, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 862, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_main_office ul li:first-child a {
               color: #00a0df; }
-            /* line 863, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 864, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_main_office ul li:first-child::before {
               position: absolute;
               content: "";
@@ -1041,7 +1042,7 @@ footer {
               width: 18px;
               height: 18px;
               left: 0; }
-            /* line 871, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 872, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_main_office ul li:last-child::before {
               position: absolute;
               content: "";
@@ -1049,30 +1050,30 @@ footer {
               width: 18px;
               height: 18px;
               left: 0; }
-      /* line 879, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+      /* line 880, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
       footer .container .row_office {
         font-family: 'Museo Sans Cyrl 300';
         font-size: 14px;
         padding: 0 15px; }
-        /* line 883, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        /* line 884, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
         footer .container .row_office_title {
           font-family: 'Museo Sans Cyrl 500';
           margin-bottom: 21px;
           letter-spacing: -0.24px; }
-        /* line 887, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        /* line 888, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
         footer .container .row_office_contact {
           list-style: none;
           margin-bottom: 32px;
           position: relative;
           padding-left: 28px; }
-          /* line 892, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          /* line 893, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
           footer .container .row_office_contact li {
             margin-bottom: 20px; }
-            /* line 894, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 895, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_office_contact li a {
               text-decoration: none;
               color: #00a0df; }
-              /* line 897, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+              /* line 898, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
               footer .container .row_office_contact li a::before {
                 position: absolute;
                 content: "";
@@ -1080,35 +1081,35 @@ footer {
                 background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
                 width: 18px;
                 height: 18px; }
-            /* line 905, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 906, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_office_contact li:last-child a {
               color: black; }
-              /* line 907, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+              /* line 908, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
               footer .container .row_office_contact li:last-child a::before {
                 background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain; }
-        /* line 909, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        /* line 910, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
         footer .container .row_office_second_title {
           margin-bottom: 21px;
           font-family: 'Museo Sans Cyrl 500';
           letter-spacing: -0.24px; }
-        /* line 913, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+        /* line 914, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
         footer .container .row_office_second_contact {
           padding-left: 28px;
           position: relative;
           list-style: none; }
-          /* line 917, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+          /* line 918, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
           footer .container .row_office_second_contact li {
             margin-bottom: 21px; }
-            /* line 919, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 920, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_office_second_contact li a {
               text-decoration: none;
               font-size: 14px;
               color: #002856;
               font-family: 'Museo Sans Cyrl 300'; }
-            /* line 925, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 926, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_office_second_contact li:first-child a {
               color: #00a0df; }
-            /* line 927, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 928, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_office_second_contact li:first-child::before {
               position: absolute;
               content: "";
@@ -1116,7 +1117,7 @@ footer {
               width: 18px;
               height: 18px;
               left: 0; }
-            /* line 935, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
+            /* line 936, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/main.sass */
             footer .container .row_office_second_contact li:last-child::before {
               position: absolute;
               content: "";
