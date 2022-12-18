@@ -1,0 +1,536 @@
+body {
+  font-family: 'Museo Sans Cyrl 300';
+  letter-spacing: -0.24px;
+  position: relative;
+  color: #182438;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 30;
+  transition: opacity 0.5s ease-out;
+}
+
+header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100px;
+  transition: all .5s ease-out;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) -59.23%, rgba(0, 0, 0, 0));
+}
+
+header .container .header_logo {
+  position: absolute;
+  z-index: 35;
+  display: block;
+  left: 46.5%;
+  background: url("../img/main_page/logo/logo_turan_white.svg") no-repeat 50%/cover;
+  width: 106px;
+  height: 54px;
+}
+
+header .container .header_logo:hover {
+  background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover;
+}
+
+nav {
+  padding-top: 86px;
+  padding-bottom: 50px;
+  color: #fff;
+}
+
+nav .container {
+  padding: 0 15px;
+  margin: 0 56.6px;
+}
+
+nav .container ul {
+  display: flex;
+  letter-spacing: -0.24px;
+  list-style: none;
+}
+
+nav .container ul li a {
+  text-decoration: none;
+  color: #182438;
+  margin-right: 25px;
+}
+
+nav .container ul li .main_page {
+  z-index: 36;
+  opacity: 0.5;
+  position: relative;
+}
+
+nav .container ul li .main_page:hover {
+  opacity: 1.0;
+}
+
+nav .container ul li .main_page::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #182438;
+  position: absolute;
+  left: 50px;
+  top: 8px;
+  margin: 0 12px;
+}
+
+.science_materials_texts {
+  padding-bottom: 45px;
+}
+
+.science_materials_texts .container {
+  margin: 0 56.6px;
+  padding: 0 15px;
+}
+
+.science_materials_texts_wrap {
+  display: flex;
+}
+
+.science_materials_texts_wrap_title {
+  max-width: 60%;
+  padding-right: 30px;
+  color: #002856;
+  margin: 0 0 50px;
+  font-family: 'Montserrat Alternates';
+  font-size: 60px;
+  paddding-left: 15px;
+  flex: 0 0 60%;
+}
+
+.science_materials_texts_wrap_descr {
+  max-width: 40%;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.science_content {
+  padding-top: 70px;
+  display: block;
+}
+
+.science_content .container {
+  margin: 0 56.6px;
+  padding: 0 15px;
+}
+
+.science_content_row1 {
+  display: flex;
+}
+
+.science_content_row1_wrap {
+  padding: 0 15px;
+  margin-bottom: 30px;
+  flex: 0 0 24%;
+  max-width: 24%;
+}
+
+.science_content_row1_wrap_a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.science_content_row1_wrap_a_img_holder {
+  margin-bottom: 17px;
+  width: 297px;
+  height: 280px;
+  object-git: cover;
+  overflow: hidden;
+}
+
+.science_content_row1_wrap_a_img_holder img {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease;
+}
+
+.science_content_row1_wrap_a_img_holder img:hover {
+  transform: scale(1.2);
+}
+
+.science_content_row1_wrap_a_img_holder_icon {
+  margin: 35px 43px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  display: block;
+  position: absolute;
+  width: 210px;
+  height: 210px;
+    overflow: hidden;
+
+}
+/* .volna{
+  background: url('https://turanwater.com/assets/img/wave_bg.svg') no-repeat 0 0;
+  position: absolute;
+  z-index: -2;
+  width: 620px;
+  height: 3300px;
+  position: absolute;
+  right: 100%;
+  top: 500px;
+  opacity: 0;
+  transition: transform 1s;
+  -webkit-transform: translate(40%);
+  right: 100%;
+    top: 101%;
+    width: 820px;
+    height: 400px;
+    transition: transform 1s;
+    z-index: -1;
+
+} */
+/* .volna._activia{
+  opacity: 1;
+} */
+/* .science_content_row1_wrap_a_img_holder_icon::before._activia{
+  right: 100%;
+  top: 101%;
+  width: 820px;
+  height: 400px; 
+  opacity: 0;
+} */
+
+.science_content_row1_wrap_a_img_holder_icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 210px;
+  height: 210px;  
+  background: url("../img/main_page/btn_wave_dark.svg") no-repeat 50%;
+  background-size: contain;
+
+}
+
+.science_content_row1_wrap_a_img_holder_icon div {
+  display: block;
+  top: 96px;
+  left: 100px;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.science_content_row1_wrap_a_img_holder_icon div::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("https://turanwater.com/assets/img/file.svg") no-repeat 50%/contain;
+  width: 18px;
+  height: 23px;
+  transform: translateX(-22px);
+  top: -2px;
+}
+.science_content_row1_wrap_a_img_holder_icon::after {
+  /* background: url("https://turanwater.com/assets/img/wave_bg.svg") no-repeat 0 0;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 100%;
+  top: 101%;
+  width: 820px;
+  height: 400px;
+  z-index: 1;
+  opacity: 0;
+  transition: transform 1s;
+  -webkit-transform: translate(40%); */
+  /* content: "";
+  position: absolute;
+  bottom: -50%;
+  left: -50%;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: aqua;
+  border-radius: 40%;
+  animation: spin 3s linear infinite;
+  z-index: -5; */
+}
+/* @keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100%) rotate(500deg);
+  }
+} */
+
+
+.science_content_row1_wrap_a_date {
+  color: #00a0df;
+  margin-bottom: 16px;
+}
+
+.science_content_row1_wrap_a_descr {
+  font-size: 20px;
+  margin-bottom: 16;
+  color: #002856;
+  font-family: 'Montserrat Alternates';
+}
+
+.science_content_row2 {
+  display: flex;
+}
+
+.science_content_row2_wrap1 {
+  flex: 0 0 50%;
+  max-width: 50%;
+  min-height: 18.75rem;
+  position: relative;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.science_content_row2_wrap1_img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.science_content_row2_wrap1_imgInfo {
+  display: flex;
+  margin-top: 320px;
+}
+
+.science_content_row2_wrap1_imgInfo_a {
+  position: relative;
+}
+
+.science_content_row2_wrap1_imgInfo_a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("../img/main_page/btn_wave_white.svg") no-repeat 50%;
+  background-size: contain;
+  top: -26px;
+  left: 25px;
+}
+
+.science_content_row2_wrap1_imgInfo_a img {
+  position: absolute;
+  top: 7px;
+  left: 60px;
+}
+
+.science_content_row2_wrap1_imgInfo div {
+  max-width: 430px;
+  font-family: 'Montserrat Alternates';
+  font-size: 20px;
+  color: #fff;
+  margin-left: 150px;
+}
+
+.science_content_row3 {
+  display: flex;
+}
+
+footer {
+  margin-top: 30px;
+  background: #dff1fd;
+  padding: 48px 0 32px 0;
+}
+
+footer .container {
+  margin: 0 65px;
+  padding: 0 15px;
+}
+
+footer .container .row {
+  display: flex;
+}
+
+footer .container .row_logo {
+  width: 327px;
+  padding: 0 15px;
+}
+
+footer .container .row_product {
+  width: 327px;
+  padding: 0 15px;
+}
+
+footer .container .row_product_list {
+  list-style: none;
+}
+
+footer .container .row_product_list li {
+  margin-bottom: 20.8px;
+}
+
+footer .container .row_product_list li a {
+  text-decoration: none;
+  font-family: 'Museo Sans Cyrl 500',sans-serif;
+  color: #182438;
+  font-size: 14px;
+  letter-spacing: -0.24px;
+}
+
+footer .container .row_product_socials {
+  margin-left: 40px;
+}
+
+footer .container .row_product_socials a img {
+  height: 22px;
+  width: 22px;
+}
+
+footer .container .row_product_socials a:first-child {
+  margin-right: 30px;
+}
+
+footer .container .row_main_office {
+  width: 327px;
+  padding: 0 15px;
+  position: relative;
+}
+
+footer .container .row_main_office p {
+  font-family: 'Museo Sans Cyrl 500';
+}
+
+footer .container .row_main_office ul {
+  padding-left: 28px;
+  position: relative;
+  list-style: none;
+}
+
+footer .container .row_main_office ul li {
+  margin-bottom: 10px;
+}
+
+footer .container .row_main_office ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #002856;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+footer .container .row_main_office ul li:first-child a {
+  color: #00a0df;
+}
+
+footer .container .row_main_office ul li:first-child::before {
+  position: absolute;
+  content: "";
+  background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+  left: 0;
+}
+
+footer .container .row_main_office ul li:last-child::before {
+  position: absolute;
+  content: "";
+  background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+  left: 0;
+}
+
+footer .container .row_office {
+  font-family: 'Museo Sans Cyrl 300';
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+footer .container .row_office_title {
+  font-family: 'Museo Sans Cyrl 500';
+  margin-bottom: 21px;
+  letter-spacing: -0.24px;
+}
+
+footer .container .row_office_contact {
+  list-style: none;
+  margin-bottom: 32px;
+  position: relative;
+  padding-left: 28px;
+}
+
+footer .container .row_office_contact li {
+  margin-bottom: 20px;
+}
+
+footer .container .row_office_contact li a {
+  text-decoration: none;
+  color: #00a0df;
+}
+
+footer .container .row_office_contact li a::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+}
+
+footer .container .row_office_contact li:last-child a {
+  color: black;
+}
+
+footer .container .row_office_contact li:last-child a::before {
+  background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
+}
+
+footer .container .row_office_second_title {
+  margin-bottom: 21px;
+  font-family: 'Museo Sans Cyrl 500';
+  letter-spacing: -0.24px;
+}
+
+footer .container .row_office_second_contact {
+  padding-left: 28px;
+  position: relative;
+  list-style: none;
+}
+
+footer .container .row_office_second_contact li {
+  margin-bottom: 21px;
+}
+
+footer .container .row_office_second_contact li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #002856;
+  font-family: 'Museo Sans Cyrl 300';
+}
+
+footer .container .row_office_second_contact li:first-child a {
+  color: #00a0df;
+}
+
+footer .container .row_office_second_contact li:first-child::before {
+  position: absolute;
+  content: "";
+  background: url("https://turanwater.com/assets/img/phone.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+  left: 0;
+}
+
+footer .container .row_office_second_contact li:last-child::before {
+  position: absolute;
+  content: "";
+  background: url("https://turanwater.com/assets/img/email.svg") no-repeat 0/contain;
+  width: 18px;
+  height: 18px;
+  left: 0;
+}
