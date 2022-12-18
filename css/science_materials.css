@@ -165,54 +165,22 @@ nav .container ul li .main_page::after {
   display: flex;
   justify-content: center;
   align-content: center;
-  position: absolute;
+  position: relative;
   display: block;
   position: absolute;
   width: 210px;
   height: 210px;
-    overflow: hidden;
-
+  background-size: contain;
 }
-/* .volna{
-  background: url('https://turanwater.com/assets/img/wave_bg.svg') no-repeat 0 0;
-  position: absolute;
-  z-index: -2;
-  width: 620px;
-  height: 3300px;
-  position: absolute;
-  right: 100%;
-  top: 500px;
-  opacity: 0;
-  transition: transform 1s;
-  -webkit-transform: translate(40%);
-  right: 100%;
-    top: 101%;
-    width: 820px;
-    height: 400px;
-    transition: transform 1s;
-    z-index: -1;
-
-} */
-/* .volna._activia{
-  opacity: 1;
-} */
-/* .science_content_row1_wrap_a_img_holder_icon::before._activia{
-  right: 100%;
-  top: 101%;
-  width: 820px;
-  height: 400px; 
-  opacity: 0;
-} */
 
 .science_content_row1_wrap_a_img_holder_icon::before {
   content: "";
   display: block;
   position: absolute;
   width: 210px;
-  height: 210px;  
+  height: 210px;
   background: url("../img/main_page/btn_wave_dark.svg") no-repeat 50%;
   background-size: contain;
-
 }
 
 .science_content_row1_wrap_a_img_holder_icon div {
@@ -233,8 +201,9 @@ nav .container ul li .main_page::after {
   transform: translateX(-22px);
   top: -2px;
 }
+
 .science_content_row1_wrap_a_img_holder_icon::after {
-  /* background: url("https://turanwater.com/assets/img/wave_bg.svg") no-repeat 0 0;
+  background: url("https://turanwater.com/assets/img/wave_bg.svg") no-repeat 0 0;
   content: "";
   display: block;
   position: absolute;
@@ -242,31 +211,17 @@ nav .container ul li .main_page::after {
   top: 101%;
   width: 820px;
   height: 400px;
+  -webkit-transform: translate(40%);
+  -ms-transform: translate(40%);
+  transform: translate(40%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
+  transition: transform 1s;
+  transition: transform 1s,-webkit-transform 1s;
   z-index: 1;
   opacity: 0;
-  transition: transform 1s;
-  -webkit-transform: translate(40%); */
-  /* content: "";
-  position: absolute;
-  bottom: -50%;
-  left: -50%;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: aqua;
-  border-radius: 40%;
-  animation: spin 3s linear infinite;
-  z-index: -5; */
 }
-/* @keyframes spin {
-  0% {
-    transform: translateY(0) rotate(0deg);
-  }
-  100% {
-    transform: translateY(-100%) rotate(500deg);
-  }
-} */
-
 
 .science_content_row1_wrap_a_date {
   color: #00a0df;
