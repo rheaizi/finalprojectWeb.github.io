@@ -62,3 +62,13 @@ document.querySelector('.healthy_slide_text_prev').onclick = function(){
     }
     slider();
 };
+
+function letsgo () {
+    var s = document.querySelector('.volna');
+    s.classList.add("_activia");
+}
+function letsgoEnd(){
+    var s = document.querySelector('.volna');
+    s.classList.remove("_activia");
+    console.log(s);
+}

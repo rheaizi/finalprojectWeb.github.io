@@ -1,0 +1,369 @@
+body
+    font-family: 'Museo Sans Cyrl 300'
+    letter-spacing: -0.24px
+    position: relative
+    color: #182438
+header
+    height: 80px
+    width: 100%
+    position: fixed
+    z-index: 30
+    transition: opacity 0.5s ease-out
+    &::before
+        content: ""
+        display: block
+        position: absolute
+        left: 0
+        top: 0
+        z-index: 9
+        width: 100%
+        height: 100px
+        transition: all .5s ease-out
+        background: linear-gradient(180deg,rgba(0,0,0,.7) -59.23%, rgba(0,0,0,0))
+    .container
+        .header_logo
+            position: absolute
+            z-index: 35
+            display: block
+            left: 46.5%
+            background: url('../img/main_page/logo/logo_turan_white.svg') no-repeat 50%/cover
+            width: 106px
+            height: 54px
+            &:hover
+                background: url('../img/main_page/logo/logo_turan.svg') no-repeat 50%/cover
+nav
+    padding-top: 86px
+    padding-bottom: 50px
+    color: #fff
+    .container
+        padding: 0 15px
+        margin: 0 56.6px 
+        ul
+            display: flex
+            letter-spacing: -0.24px
+            list-style: none
+            li
+                a
+                    text-decoration: none
+                    color: #182438
+                    margin-right: 25px
+                .main_page
+                    z-index: 36
+                    opacity: 0.5
+                    position: relative
+                    &:hover
+                        opacity: 1.0
+                    &::after
+                        content: ""
+                        display: block
+                        width: 4px
+                        height: 4px
+                        border-radius: 50%
+                        background: #182438
+                        position: absolute
+                        left: 50px
+                        top: 8px
+                        margin: 0 12px
+
+.science_materials_texts
+    padding-bottom: 45px
+    .container
+        margin: 0 56.6px
+        padding: 0 15px
+    &_wrap
+        display: flex
+        &_title
+            max-width: 60%
+            padding-right: 30px
+            color: #002856
+            margin: 0 0 50px
+            font-family: 'Montserrat Alternates'
+            font-size: 60px
+            paddding-left: 15px
+            flex: 0 0 60%
+        &_descr
+            max-width: 40%
+            font-size: 16px
+            line-height: 29px
+            
+.science_content
+    padding-top: 70px
+    display: block
+    .container
+        margin: 0 56.6px
+        padding: 0 15px
+    &_row1
+        // margin: 0 15px
+        display: flex
+        &_wrap
+            padding: 0 15px
+            margin-bottom: 30px
+            flex: 0 0 24%
+            max-width: 24%
+            // max-width: 20%
+            &_a
+                text-decoration: none
+                cursor: pointer
+                &_img_holder
+                    margin-bottom: 17px
+                    width: 297px
+                    height: 280px
+                    object-git: cover
+                    overflow: hidden
+                    img
+                        width: 100%
+                        height: 100%
+                        transition: transform 1s ease;
+                        &:hover
+                            transform: scale(1.2);
+                &_img_holder
+                    // border: 1px solid #000
+                    &_icon
+                        margin: 35px 43px
+                        display: flex
+                        justify-content: center
+                        align-content: center
+                        // border: 1px solid #000
+                        position: relative
+                        display: block
+                        position: absolute
+                        width: 210px
+                        height: 210px
+                        // background: url('../img/main_page/btn_wave_dark.svg') no-repeat 50%
+                        background-size: contain
+                        &::before
+                            content: ""
+                            display: block
+                            position: absolute
+                            width: 210px
+                            height: 210px
+                            background: url('../img/main_page/btn_wave_dark.svg') no-repeat 50%
+                            background-size: contain
+                        div
+                            // border: 1px solid #000
+                            display: block
+                            top: 96px
+                            left: 100px
+                            margin: 0 auto
+                            position: absolute
+                            
+                            &::before
+                                // border: 1px solid #000
+                                content: ""
+                                display: block
+                                position: absolute
+                                background: url('https://turanwater.com/assets/img/file.svg') no-repeat 50%/contain
+                                width: 18px
+                                height: 23px
+                                transform: translateX(-22px)
+                                top: -2px
+                        &::after
+                            // display: none
+                            background: url('https://turanwater.com/assets/img/wave_bg.svg') no-repeat 0 0
+                            content: ""
+                            display: block
+                            position: absolute
+                            right: 100%
+                            top: 101%
+                            width: 820px
+                            height: 400px
+                            -webkit-transform: translate(40%)
+                            -ms-transform: translate(40%)
+                            transform: translate(40%)
+                            -webkit-transition: -webkit-transform 1s
+                            transition: -webkit-transform 1s
+                            -o-transition: transform 1s
+                            transition: transform 1s
+                            transition: transform 1s,-webkit-transform 1s
+                            z-index: 1
+                            opacity: 0
+                        
+                        
+
+                &_date
+                    color: #00a0df
+                    margin-bottom: 16px
+                &_descr
+                    font-size: 20px
+                    margin-bottom: 16
+                    color: #002856
+                    font-family: 'Montserrat Alternates'
+    &_row2
+        display: flex
+        &_wrap1
+            flex: 0 0 50%
+            max-width: 50%
+            // padding: 1.875rem;
+            min-height: 18.75rem
+            position: relative
+            margin-bottom: 30px
+            // align-items: flex-end
+            margin-right: 20px
+            &_img
+                position: absolute
+                left: 0
+                top: 0
+                width: 100%
+                height: 100%
+                object-fit: cover
+                z-index: -1
+            &_imgInfo
+                display: flex
+                margin-top: 320px
+                &_a
+                    position: relative
+                    &::before
+                            content: ""
+                            display: block
+                            position: absolute
+                            width: 100px
+                            height: 100px
+                            background: url('../img/main_page/btn_wave_white.svg') no-repeat 50%
+                            background-size: contain
+                            top: -26px
+                            left: 25px
+                    img
+                        position: absolute
+                        top: 7px
+                        left: 60px
+                div
+                    max-width: 430px
+                    font-family: 'Montserrat Alternates'
+                    font-size: 20px
+                    color: #fff
+                    margin-left: 150px 
+    &_row3
+        display: flex
+footer
+    margin-top: 30px
+    background: #dff1fd
+    padding: 48px 0 32px 0
+    .container
+        margin: 0 65px
+        padding: 0 15px
+        .row
+            display: flex
+            &_logo
+                width: 327px
+                padding: 0 15px
+            &_product
+                width: 327px
+                padding: 0 15px
+                &_list
+                    list-style: none
+                    li
+                        margin-bottom: 20.8px
+                        a
+                            text-decoration: none
+                            font-family: 'Museo Sans Cyrl 500',sans-serif
+                            color: #182438
+                            font-size: 14px
+                            letter-spacing: -0.24px
+                &_socials
+                    margin-left: 40px
+                    a
+                        img
+                            height: 22px
+                            width: 22px
+                        &:first-child
+                            margin-right: 30px
+            &_main_office
+                width: 327px
+                padding: 0 15px
+                position: relative
+                p
+                    font-family: 'Museo Sans Cyrl 500'
+                ul
+                    padding-left: 28px
+                    position: relative
+                    list-style: none
+                    li
+                        margin-bottom: 10px
+                        a
+                            text-decoration: none
+                            font-size: 14px
+                            color: #002856
+                            font-family: 'Museo Sans Cyrl 300'
+                        &:first-child
+                            a
+                                color: #00a0df
+                            &::before
+                                position: absolute
+                                content: ""
+                                background: url('https://turanwater.com/assets/img/phone.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                                left: 0
+                        &:last-child
+                            &::before
+                                position: absolute
+                                content: ""
+                                background: url('https://turanwater.com/assets/img/email.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                                left: 0                            
+
+            &_office
+                font-family: 'Museo Sans Cyrl 300'
+                font-size: 14px
+                padding: 0 15px
+                &_title
+                    font-family: 'Museo Sans Cyrl 500'
+                    margin-bottom: 21px
+                    letter-spacing: -0.24px
+                &_contact
+                    list-style: none
+                    margin-bottom: 32px
+                    position: relative
+                    padding-left: 28px
+                    li
+                        margin-bottom: 20px
+                        a
+                            text-decoration: none
+                            color: #00a0df
+                            &::before
+                                position: absolute
+                                content: ""
+                                left: 0
+                                background: url('https://turanwater.com/assets/img/phone.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                        &:last-child
+                            a
+                                color: black
+                                &::before
+                                    background: url('https://turanwater.com/assets/img/email.svg') no-repeat 0/contain
+                &_second_title
+                    margin-bottom: 21px
+                    font-family: 'Museo Sans Cyrl 500'
+                    letter-spacing: -0.24px
+                &_second_contact
+                    padding-left: 28px
+                    position: relative
+                    list-style: none
+                    li
+                        margin-bottom: 21px
+                        a
+                            text-decoration: none
+                            font-size: 14px
+                            color: #002856
+                            font-family: 'Museo Sans Cyrl 300'
+                        &:first-child
+                            a
+                                color: #00a0df
+                            &::before
+                                position: absolute
+                                content: ""
+                                background: url('https://turanwater.com/assets/img/phone.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                                left: 0
+                        &:last-child
+                            &::before
+                                position: absolute
+                                content: ""
+                                background: url('https://turanwater.com/assets/img/email.svg') no-repeat 0/contain
+                                width: 18px
+                                height: 18px
+                                left: 0    
+
