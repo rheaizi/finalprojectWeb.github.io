@@ -1,21 +1,15 @@
 body {
   font-family: 'Museo Sans Cyrl 300';
   letter-spacing: -0.24px;
-  position: relative;
-<<<<<<< HEAD
-  color: #182438; }
-
-/* line 6, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
-=======
+  /* position: relative; */
 }
 
->>>>>>> f2d3509b3648ac5bb692c2f94c61b628cee91651
+/* line 6, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
 header {
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 30;
-<<<<<<< HEAD
   transition: opacity 0.5s ease-out; }
   /* line 12, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   header::before {
@@ -101,19 +95,77 @@ nav {
     padding: 0 110px; }
   /* line 82, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .choose_content {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 1s ease 0.5s;
+
     margin-top: 150px;
     max-width: 600px;
     color: #fff;
     font-size: 60px;
     margin-bottom: 30px;
-    font-family: 'Montserrat Alternates'; }
+    font-family: 'Montserrat Alternates'; 
+  }
+
+  .choose_content._active{
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
   /* line 89, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .choose_wave {
     background: url(" https://turanwater.com/assets/img/bottom-wave.svg") repeat-x 0 100%/contain;
     position: absolute;
     top: 732px;
     width: 100%;
-    height: 18px; }
+    height: 18px; 
+  }
+
+  .bubbles .first{
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+   .bubbles .first{
+    transition: all 4s ease 0s;
+    width: 93px;
+    height: 93px;
+    right: 500px;
+    top: 700px;
+    opacity: 0.5;
+  } 
+  .bubbles .second{
+    position: absolute;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+   .bubbles .second{
+    transition: all 4s ease 0.6s;
+    width: 42px;
+    height: 42px;
+    right: 300px;
+    top: 734px;
+  }
+  .bubbles .third{
+    position: absolute;
+    border-radius: 50%;
+    background: hsla(0,0%,100%,.4);
+  }
+   .bubbles .third{
+    transition: all 4s ease 1s;
+    width: 28px;
+    height: 28px;
+    right: 515px;
+    top: 735px;
+  }
+  .first._active{
+    transform: translateY(-1000px) scale(1.5, 1.5);
+  }
+  .second._active{
+    transform: translateY(-1000px) scale(1.5, 1.5);
+  }
+  .third._active{
+    transform: translateY(-1000px) scale(1.5, 1.5);
+  }
 
 /* line 95, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
 .types {
@@ -128,10 +180,16 @@ nav {
     padding-left: 126px;
     margin-bottom: 75px;
     display: flex; }
+
     /* line 105, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .types_numeric_title_second {
       margin-left: 100px; }
     /* line 107, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
+    .types_numeric_title {
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 1s ease 0s;
+    }
     .types_numeric_title span {
       border: 1px solid #00a0df;
       -webkit-text-stroke: 1px #00a0df;
@@ -144,12 +202,25 @@ nav {
       align-items: center;
       font-family: 'Montserrat Alternates';
       color: rgba(0, 0, 0, 0); }
+      .types_numeric_title._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }
     /* line 119, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .types_numeric_title h2 {
       margin-bottom: 37px;
       font-size: 55px;
       color: #002856;
       font-family: 'Montserrat Alternates'; }
+      /* .row{
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 3s ease 0s;                                                   
+      }
+      .row.active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+      } */
   /* line 124, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .types .row {
     display: flex;
@@ -173,8 +244,15 @@ nav {
       line-height: 35px; }
   /* line 141, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .types_artificially {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease 0s;  
     padding: 0 15px;
     width: 406px; }
+    .types_artificially._active{
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
     /* line 144, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .types_artificially div {
       height: 270px;
@@ -183,8 +261,15 @@ nav {
       padding: 34px; }
   /* line 149, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .types_blended {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease 0.1s;
     padding: 0 15px;
     width: 406px; }
+    .types_blended._active{
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
     /* line 152, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .types_blended div {
       height: 270px;
@@ -193,6 +278,9 @@ nav {
       padding: 34px; }
   /* line 157, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .types_processed {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease 0.2s;
     padding: 0 15px;
     width: 406px; }
     /* line 160, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
@@ -201,12 +289,19 @@ nav {
       border: 1px solid #dff1fd;
       margin-bottom: 50px;
       padding: 34px; }
+    .types_processed._active{
+      transform: translate(0px, 0px);
+      opacity: 1;
+      }
   /* line 165, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .types .row_2 {
     display: flex;
     width: 1220px; }
   /* line 168, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .types_natural {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
     padding: 0 15px;
     width: 380px; }
     /* line 171, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
@@ -215,6 +310,10 @@ nav {
       border: 1px solid #dff1fd;
       margin-bottom: 50px;
       padding: 34px; }
+      .types_natural._active{
+        transform: translate(0px, 0px);
+        opacity: 1;
+      }  
       /* line 176, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .types_natural div img {
         width: 60px;
@@ -234,6 +333,9 @@ nav {
         line-height: 35px; }
   /* line 190, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .types_title {
+    transition: all 0.5s ease 0s;
+    transform: translateY(100px);
+    opacity: 0;
     margin-top: 30px;
     max-width: 600px;
     font-size: 66px;
@@ -243,7 +345,89 @@ nav {
     padding-left: 65px;
     color: #002856;
     font-family: 'Montserrat Alternates'; }
+    .types_title._active{
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+    .types_bubbles div{
+      position: absolute;
+      border-radius: 50%;
+      bottom: -100px;
+      z-index: 1;
+    }
+    .fourth{
+      opacity: 0;
+      transition: all 8s ease 0s;
+      width: 57px;
+      height: 57px;
+      background: #00a0df;
+      left: 85%;
+    }
+    .fourth._active{
+      transform: translateY(-2300px) scale(1.5, 1.5);
+      opacity: 1;
+    }
 
+
+    .fifth{
+      opacity: 0;
+      transition: all 8s ease 0.5s;
+      width: 21px;
+      height: 21px;
+      background: #00a0df;
+      left: 81%;
+    }
+    .fifth._active{
+      transform: translateY(-2300px) scale(1.5, 1.5);
+      opacity: 1;
+    }
+
+    .sixth{
+      opacity: 0;
+      transition: all 8s ease 0.6s;
+      width: 46px;
+      height: 46px;
+      background: #00a0df;
+      left: 63%;
+    }
+    .sixth._active{
+      transform: translateY(-2300px) scale(1.5, 1.5);
+      opacity: 1;
+    }
+
+    .seventh{
+      opacity: 0;
+      transition: all 8s ease 0.8s;
+      width: 31px;
+      height: 31px;
+      left: 33%;
+      background: #00a0df;
+    }
+    .seventh._active{
+      transform: translateY(-2300px) scale(1.5, 1.5);
+      opacity: 1;
+    }
+
+    .first_title{
+    /* position: absolute; */
+    margin-left: -7%;
+    transition: all 2s ease 0s;
+    transform: translateX(-100px);
+    opacity: 0;
+    }
+    .first_title._active{
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+    .second_title{
+      transition: all 2s ease 0s;
+      transform: translateX(100px);
+      opacity: 0;
+    }
+    .second_title._active{
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
 /* line 201, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
 .composition {
   padding-top: 112px;
@@ -274,9 +458,16 @@ nav {
       color: rgba(0, 0, 0, 0); }
     /* line 224, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .composition_wrap_content_descr {
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 2s ease 0s;
       margin-right: 40px;
       max-width: 365px;
       line-height: 28px; }
+      .composition_wrap_content_descr._active{
+        opacity: 1;
+        transform: translate(0px, 0px);
+      }
       /* line 228, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .composition_wrap_content_descr p {
         margin-bottom: 32px;
@@ -288,10 +479,17 @@ nav {
       height: 329px; }
       /* line 236, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .composition_wrap_content_elements_m1 {
+        transform: translateY(70px);
+        opacity: 0;
+        transition: all 1.5s ease 0s;
         margin: 0;
         width: 92px;
         height: 92px;
         margin-bottom: 24px; }
+        .composition_wrap_content_elements_m1._active{
+          transform: translateY(0);
+          opacity: 1;
+        }
         /* line 241, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
         .composition_wrap_content_elements_m1_text {
           display: none; }
@@ -325,9 +523,16 @@ nav {
             font-family: 'Museo Sans Cyrl 300'; }
       /* line 267, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .composition_wrap_content_elements_m2 {
+        transform: translateY(70px);
+        opacity: 0;
+        transition: all 1.5s ease 0.15s;
         width: 92px;
         height: 92px;
         margin: -50px 0 0 auto; }
+        .composition_wrap_content_elements_m2._active{
+          transform: translateY(0);
+          opacity: 1;
+        }
         /* line 271, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
         .composition_wrap_content_elements_m2_text {
           display: none; }
@@ -361,9 +566,16 @@ nav {
             font-family: 'Museo Sans Cyrl 300'; }
       /* line 297, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .composition_wrap_content_elements_m3 {
+        transform: translateY(70px);
+        opacity: 0;
+        transition: all 1.5s ease 0.25s;
         margin: -30px auto 0 90px;
         width: 112px;
         height: 112px; }
+        .composition_wrap_content_elements_m3._active{
+          transform: translateY(0);
+          opacity: 1;
+        }
         /* line 301, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
         .composition_wrap_content_elements_m3_text {
           display: none; }
@@ -397,10 +609,17 @@ nav {
             font-family: 'Museo Sans Cyrl 300'; }
       /* line 327, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .composition_wrap_content_elements_m4 {
+        transform: translateY(70px);
+        opacity: 0;
+        transition: all 1s ease 0.35s;
         width: 94px;
         height: 94px;
         margin-bottom: 0;
         margin-right: auto; }
+        .composition_wrap_content_elements_m4._active{
+          transform: translateY(0);
+          opacity: 1;
+        }
         /* line 332, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
         .composition_wrap_content_elements_m4_text {
           display: none; }
@@ -434,10 +653,17 @@ nav {
             font-family: 'Museo Sans Cyrl 300'; }
       /* line 358, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .composition_wrap_content_elements_m5 {
+        transform: translateY(70px);
+        opacity: 0;
+        transition: all 1s ease 0.45s;
         margin: -55px 40px 0 auto;
         margin-left: 236px;
         width: 74px;
         height: 74px; }
+        .composition_wrap_content_elements_m5._active{
+          transform: translateY(0);
+          opacity: 1;
+        }
         /* line 363, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
         .composition_wrap_content_elements_m5_text {
           display: none; }
@@ -470,6 +696,7 @@ nav {
             font-size: 12px;
             font-family: 'Museo Sans Cyrl 300'; }
 
+
 /* line 389, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
 .normalize {
   position: relative;
@@ -489,10 +716,17 @@ nav {
     padding: 0 15px; }
   /* line 403, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .normalize_numeric_title {
+    transition: all 1.5s ease 0s;
+    transform: translateY(100px);
+    opacity: 0;
     padding-top: 70px;
     padding-left: 256px;
     margin-bottom: 75px;
     position: relative; }
+    .normalize_numeric_title._active{
+      transform: translateY(0);
+      opacity: 1;
+    }
     /* line 408, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .normalize_numeric_title span {
       border: 1px solid #fff;
@@ -520,6 +754,106 @@ nav {
     display: flex;
     margin-left: -15px;
     margin-right: -15px; }
+    .normalize_right{
+    transition: all 1.5s ease 0.15s;
+    transform: translateY(100px);
+    opacity: 0;
+    }
+    .normalize_right._active{
+      transform: translateY(0);
+      opacity: 1;
+    }
+    .normalize_left{
+      transition: all 1.5s ease 0.3s;
+      transform: translateY(100px);
+      opacity: 0;
+      }
+      .normalize_left._active{
+        transform: translateY(0);
+        opacity: 1;
+      }
+      .normalize_bubble div{
+        position: absolute;
+        border: 1px solid #fff;
+        bottom: -100px;
+        z-index: 1;
+        border-radius: 50%;
+      }
+      .eighth{
+        opacity: 1;
+        transition: all 10s ease 0s;
+        /* background-color: black; */
+        width: 57px;
+        height: 57px;
+        left: 82%;
+      }
+      .eighth._active{
+        transform: translateY(-3250px) scale(1.5, 1.5);
+        opacity: 0;
+      }
+      .nineth{
+        opacity: 1;
+        transition: all 10s ease 0.3s;
+        width: 29px;
+        height: 29px;
+        left: 89%;
+      }
+      .nineth._active{
+        transform: translateY(-3250px) scale(1.5, 1.5);
+        opacity: 0;
+      }
+      .tenth{
+        opacity: 1;
+        transition: all 10s ease 0.6s;
+        width: 17px;
+        height: 17px;
+        left: 86%;
+      }
+      .tenth._active{
+        transform: translateY(-3250px) scale(1.5, 1.5);
+        opacity: 0;
+      }
+      .advantages_bubbles div{
+        position: absolute;
+        border: 1px solid #00a0df;
+        z-index: 1;
+        border-radius: 50%;
+      }
+      .eleventh{
+        transition: all 10s ease 0s;
+        width: 57px;
+        height: 57px;
+        /* left: 86%; */
+        /* background-color: red; */
+      }
+      .eleventh._active{
+        opacity: 0;
+        transform: translateY(-3250px) scale(1.5, 1.5);
+      }
+      .twelveth{
+        opacity: 1;
+        transition: all 10s ease 0.3s;
+        width: 34px;
+        height: 34px;
+        /* left: 90%; */
+        /* background-color: red; */
+      }
+      .twelveth._active{
+        opacity: 0;
+        transform: translateY(-3250px) scale(1.5, 1.5);
+      }
+      .threteenth{
+        opacity: 1;
+        transition: all 10s ease 0.6s;
+        width: 24px;
+        height: 24px;
+        left: 86%;
+        /* background-color: red; */
+      }
+      .threteenth._active{
+        opacity: 0;
+        transform: translateY(-3250px) scale(1.5, 1.5);
+      }
   /* line 433, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .normalize_right_text {
     max-width: 500px;
@@ -570,9 +904,16 @@ nav {
     padding: 0 80px; }
   /* line 472, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .structure_numeric_title {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.5s ease 0s;
     position: relative;
     padding-left: 256px;
     margin-bottom: 75px; }
+    .structure_numeric_title._active{
+      transform: translateY(0);
+      opacity: 1;
+    }
     /* line 476, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .structure_numeric_title span {
       border: 1px solid #00a0df;
@@ -605,7 +946,14 @@ nav {
     position: relative; }
     /* line 503, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .structure_content_right {
+      opacity: 0;
+      transform: translateY(100px);
+      transition: all 1.5s ease 0.3s;
       width: 467px; }
+      .structure_content_right._active{
+        transform: translateY(0);
+        opacity: 1;
+      }
       /* line 505, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .structure_content_right p {
         padding-left: 20px;
@@ -619,13 +967,29 @@ nav {
       .structure_content_left p {
         margin-bottom: 28px;
         line-height: 28px; }
+        .textt{
+            transform: translateY(100px);
+            transition: all 1.5s ease 0.55s;
+            opacity: 0;
+        }
+        .textt._active{
+          opacity: 1;
+          transform: translateY(0);
+        }
       /* line 515, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .structure_content_left_tap {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 1.5s ease 0.4s;
         display: flex;
         flex-direction: column;
         position: absolute;
         left: -860px;
         top: 130px; }
+        .structure_content_left_tap._active{
+          opacity: 1;
+          transform: translateY(0);
+        }
         /* line 521, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
         .structure_content_left_tap img {
           margin-bottom: 30px;
@@ -640,8 +1004,20 @@ nav {
           font-family: 'Montserrat Alternates'; }
       /* line 531, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
       .structure_content_left_drops {
+        transform: translateY(100px);
+        opacity: 0;
+        transition: all 1.5s ease 0.65s;
         display: flex;
         flex-direction: column; }
+        .btn{
+          transform: translateY(100px);
+          opacity: 0;
+          transition: all 1.5s ease 0.65s;
+        }
+        .structure_content_left_drops._active,.btn._active{
+          opacity: 1;
+          transform: translateY(0);
+        }
         /* line 534, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
         .structure_content_left_drops img {
           width: 102px;
@@ -706,6 +1082,24 @@ nav {
   .quality_title {
     width: 1280px;
     margin-top: 75px; }
+    .who{
+      opacity: 0;
+      transition: all 1s ease 0s;
+      transform: translateY(50px);
+    }
+    .who._active{
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .who_text{
+      opacity: 0;
+      transition: all 1s ease 0.1s;
+      transform: translateY(50px);
+    }
+    .who_text._active{
+      opacity: 1;
+      transform: translateY(0);
+    }
     /* line 587, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .quality_title h2 {
       margin-bottom: 33px;
@@ -738,8 +1132,15 @@ nav {
         top: 7.2px; }
   /* line 612, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .quality_kz1 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.5s ease 0s;
     width: 297px;
     margin-right: 30px; }
+    .quality_kz1._active{
+      opacity: 1;
+      transform: translateY(0);
+    }
     /* line 615, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .quality_kz1 p {
       width: 200px; }
@@ -754,8 +1155,15 @@ nav {
       font-size: 12px; }
   /* line 625, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .quality_kz2 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.5s ease 0.15s;
     margin-right: 30px;
     width: 297px; }
+    .quality_kz2._active{
+      opacity: 1;
+      transform: translateY(0);
+    }
     /* line 628, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .quality_kz2 p {
       width: 200px; }
@@ -770,8 +1178,15 @@ nav {
       font-size: 12px; }
   /* line 638, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .quality_uk {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.5s ease 0.3s;
     margin-right: 30px;
     width: 297px; }
+    .quality_uk._active{
+      opacity: 1;
+      transform: translateY(0);
+    }
     /* line 641, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .quality_uk p {
       width: 200px; }
@@ -787,7 +1202,14 @@ nav {
       font-size: 12px; }
   /* line 652, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   .quality_ger {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1.5s ease 0.45s;
     width: 297px; }
+    .quality_ger._active{
+      opacity: 1;
+      transform: translateY(0);
+    }
     /* line 654, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .quality_ger p {
       width: 200px; }
@@ -840,10 +1262,48 @@ nav {
     /* line 694, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .advantages_wrap p {
       margin-bottom: 35px; }
+      .gold{
+        opacity: 0;
+        transition: all 1.5s ease 0s;
+        transform: translateY(-70px); 
+      }
+      .gold._active{
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .advantages_title{
+        opacity: 0;
+        transition: all 1s ease 0s;
+        transform: translateY(100px); 
+      }
+      .advantages_title._active{
+        opacity: 1;
+        transform: translateY(0); 
+      }
+      .advantages_p1{
+        opacity: 0;
+        transition: all 1s ease 0.15s;
+        transform: translateY(100px); 
+      }
+      .advantages_p1._active{
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .advantages_p2{
+        opacity: 0;
+        transition: all 1s ease 0.3s;
+        transform: translateY(100px); 
+      }
+      .advantages_p2._active{
+        opacity: 1;
+        transform: translateY(0);
+      }
 
 /* line 697, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
 footer {
   background: #dff1fd;
+  position: absolute;
+  z-index: 7;
   padding: 48px 0 32px 0; }
   /* line 700, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
   footer .container {
@@ -1001,80 +1461,3 @@ footer {
               left: 0; }
 
 /*# sourceMappingURL=useful.css.map */
-=======
-  transition: opacity 0.5s ease-out;
-}
-
-header::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 9;
-  width: 100%;
-  height: 100px;
-  transition: all .5s ease-out;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) -59.23%, rgba(0, 0, 0, 0));
-}
-
-header .container .header_logo {
-  position: absolute;
-  z-index: 35;
-  display: block;
-  left: 46.5%;
-  background: url("../img/main_page/logo/logo_turan_white.svg") no-repeat 50%/cover;
-  width: 106px;
-  height: 54px;
-}
-
-header .container .header_logo:hover {
-  background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover;
-}
-
-nav {
-  padding-top: 86px;
-  padding-bottom: 50px;
-  color: #fff;
-}
-
-nav .container {
-  padding: 0 15px;
-  margin: 0 56.6px;
-}
-
-nav .container ul {
-  display: flex;
-  letter-spacing: -0.24px;
-  list-style: none;
-}
-
-nav .container ul li a {
-  text-decoration: none;
-  color: #fff;
-  margin-right: 25px;
-}
-
-nav .container ul li .main_page {
-  z-index: 36;
-  opacity: 0.5;
-  position: relative;
-}
-
-nav .container ul li .main_page:hover {
-  opacity: 1.0;
-}
-
-nav .container ul li .main_page::after {
-  content: "";
-  display: block;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #fff;
-  position: absolute;
-  left: 50px;
-  top: 8px;
-  margin: 0 12px;
-}
->>>>>>> f2d3509b3648ac5bb692c2f94c61b628cee91651
