@@ -202,7 +202,7 @@ nav .container ul li .main_page::after {
   top: -2px;
 }
 
-/* .science_content_row1_wrap_a_img_holder_icon::after {
+.science_content_row1_wrap_a_img_holder_icon::after {
   background: url("https://turanwater.com/assets/img/wave_bg.svg") no-repeat 0 0;
   content: "";
   display: block;
@@ -221,7 +221,7 @@ nav .container ul li .main_page::after {
   transition: transform 1s,-webkit-transform 1s;
   z-index: 1;
   opacity: 0;
-} */
+}
 
 .science_content_row1_wrap_a_date {
   color: #00a0df;
