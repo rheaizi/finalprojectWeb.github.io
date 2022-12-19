@@ -1,4 +1,5 @@
 var animItems = document.querySelectorAll('._anim');
+var q = document.getElementById('titlee');
 window.addEventListener('scroll',animOnScroll);
 
 function animOnScroll(){
