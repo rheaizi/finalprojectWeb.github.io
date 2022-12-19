@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../ggg"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "finalWeb"
+	}
+}
