@@ -14,6 +14,11 @@
 .healthy_slide_picture .opacity0{
   opacity: 0;
 }
+
+.glass_of_water_left .opacityzero{
+  opacity: 0;
+}
+
 header {
   height: 80px;
   width: 100%;
@@ -559,11 +564,16 @@ header .container .header_logo:hover {
   width: 74px;
   height: 74px;
   margin-bottom: 24px;
-<<<<<<< HEAD
-=======
-  transform: translateY(130px);
+  transform: translateY(110px);
   opacity: 0;
-  transition: all 2s ease 0.6s;
+  transition: all 2s ease 0.5s;
+}
+.nature_minerals_wrap_right_elements_m5._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  width: 94px;
+  height: 94px;
+  margin-bottom: 24px;
 }
 
 .nature_minerals_wrap_right_elements_m5_text {
@@ -745,22 +755,22 @@ header .container .header_logo:hover {
 
 .space_wrap_photos_kosmonavt img {
   width: 226px;
-  height: auto;
-  object-fit: contain;
+  height: 0;
   margin-left: auto;
   display: block;
   transition-property: all;
 	transition-duration: 3s;
 	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
   opacity: 0;
-  transition-delay: 1s;
+  transition-delay: 0.5s;
 
 }
 .space_wrap_photos_kosmonavt img._active{
    width: 226px;
   height: 375px; 
   transform: translate(0px, 0px);
-  opacity: 1;}
+  opacity: 1;
+}
 
 .space_wrap a {
   display: block;
@@ -818,6 +828,13 @@ header .container .header_logo:hover {
   font-size: 50px;
   font-family: 'Montserrat Alternates',sans-serif;
   color: #00a0df;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.5s ease 0.2s;
+}
+.healthy_slide_text_count._active,.healthy_slide_text_title._active,.healthy_slide_text_descr._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
 
 .healthy_slide_text_count span {
@@ -831,6 +848,10 @@ header .container .header_logo:hover {
   font-size: 59px;
   letter-spacing: -0.24px;
   font-family: 'Montserrat Alternates';
+  transition: all 1s ease 0s;
+  transform: translateY(50px);
+  opacity: 0;
+  /* transition: all 0.5s ease 0.2s; */
 }
 
 .healthy_slide_text_descr {
@@ -838,10 +859,17 @@ header .container .header_logo:hover {
   color: #182438;
   font-size: 16px;
   line-height: 28px;
+  transition: all 2s ease 0s;
+  transform: translateY(50px);
+  opacity: 0;
 }
 
 .healthy_slide_text_button {
-  margin-top: 300px;
+  bottom: 100px;
+  position: absolute;
+  transition: all 2.5s ease 0.2s;
+  transform: translateY(50px);
+  opacity: 0;
 }
 
 .healthy_slide_text_button button {
@@ -852,6 +880,7 @@ header .container .header_logo:hover {
   border-radius: 50%;
   background: rgba(0, 0, 0, 0);
   border: 1px solid #00a0df;
+  
 }
 
 .healthy_slide_text_button button img {
@@ -873,8 +902,14 @@ header .container .header_logo:hover {
   z-index: 5;
   top: 570px;
   margin-top: -56px;
+  transition: all 2s ease 0s;
+  transform: translateY(50px);
+  opacity: 0;
 }
-
+.healthy_slide_text a._active, .healthy_slide_text_button._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 .healthy_slide_text a span {
   color: #002856;
   position: absolute;
@@ -903,7 +938,9 @@ header .container .header_logo:hover {
   object-fit: cover;
   transition: all ease 1s;
 }
-
+.healthy_slide_picture img:first-child{
+  z-index: 2;
+}
 .bottles {
   padding: 50px 15px 102px 15px;
   margin: 0 auto;
@@ -917,6 +954,13 @@ header .container .header_logo:hover {
   font-size: 60px;
   letter-spacing: -0.24px;
   font-family: 'Montserrat Alternates',serif;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease 0.2s;
+}
+.bottles_title._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
 
 .bottles_wrap {
@@ -934,6 +978,13 @@ header .container .header_logo:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 2s ease 0s;
+}
+.bottles_wrap_slider_items._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
 }
 
 .bottles_wrap_slider_items_left img {
@@ -1005,6 +1056,16 @@ header .container .header_logo:hover {
 
 .bottles_wrap_elements_m1 {
   margin-left: auto;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 24px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 2s ease 0.2s;
+}
+.bottles_wrap_elements_m1._active,.bottles_wrap_elements_m2._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
   width: 92px;
   height: 92px;
   margin-bottom: 24px;
@@ -1050,6 +1111,9 @@ header .container .header_logo:hover {
   width: 92px;
   height: 92px;
   margin-bottom: 24px;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: all 2s ease 0.3s;
 }
 
 .bottles_wrap_elements_m2_text {
@@ -1093,8 +1157,16 @@ header .container .header_logo:hover {
   width: 112px;
   height: 112px;
   margin-bottom: 24px;
+  transform: translateY(90px);
+  opacity: 0;
+  transition: all 2s ease 0.4s;
 }
-
+.bottles_wrap_elements_m3._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  width: 92px;
+  height: 92px;
+}
 .bottles_wrap_elements_m3_text {
   display: none;
 }
@@ -1132,6 +1204,16 @@ header .container .header_logo:hover {
 }
 
 .bottles_wrap_elements_m4 {
+  width: 74px;
+  height: 74px;
+  margin-bottom: 24px;
+  transform: translateY(110px);
+  opacity: 0;
+  transition: all 2s ease 0.5s;
+}
+.bottles_wrap_elements_m4._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
   width: 94px;
   height: 94px;
   margin-bottom: 24px;
@@ -1178,6 +1260,16 @@ header .container .header_logo:hover {
   width: 74px;
   height: 74px;
   margin-bottom: 24px;
+  transform: translateY(110px);
+  opacity: 0;
+  transition: all 2s ease 0.5s;
+}
+.bottles_wrap_elements_m5._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  width: 94px;
+  height: 94px;
+  margin-bottom: 24px;
 }
 
 .bottles_wrap_elements_m5_text {
@@ -1223,8 +1315,15 @@ header .container .header_logo:hover {
   padding-right: 25px;
   position: relative;
   text-decoration: none;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease 1s;
 }
+.bottles_wrap_elements_link._active{
+  opacity: 1;
+  transform: translateY(0);
 
+}
 .bottles_wrap_elements_link::after {
   position: absolute;
   content: "";
@@ -1234,11 +1333,9 @@ header .container .header_logo:hover {
   top: 20%;
   right: 5px;
 }
-.glass_of_water{
-  margin-bottom: 50px;
-  min-height: 760px;
+/* .glass_of_water{
   
-}
+} */
 
 .glass_of_water .container {
   display: flex;
@@ -1246,6 +1343,7 @@ header .container .header_logo:hover {
 }
 .glass_of_water_left{
   position: relative;
+  /* height: 100%; */
 }
 
 .glass_of_water_left img {
@@ -1253,16 +1351,21 @@ header .container .header_logo:hover {
   position: absolute;
   /* left: 100%; */
   top: 0;
-  width: 973px;
+  width: 1063px;
   height: 100%;
   /* height: 100%; */
   transform-origin: left;
   object-fit: cover;
   transition: all ease 1s;
 }
+.glass_of_water_left img:first-child{
+  /* position: relative; */
+  z-index: 2;
+}
 
 .glass_of_water_right {
-  padding-left: 1070px;
+  padding-left: 1130px;
+  height: 100%;
 }
 
 .glass_of_water_right_count {
@@ -1270,6 +1373,13 @@ header .container .header_logo:hover {
   font-size: 50px;
   font-family: 'Montserrat Alternates',sans-serif;
   color: #00a0df;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease 0s;
+}
+.glass_of_water_right_count._active,.glass_of_water_right_title._active,.glass_of_water_right_descr._active,.glass_of_water_right_button._active{
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .glass_of_water_right_count span {
@@ -1284,6 +1394,9 @@ header .container .header_logo:hover {
   font-size: 60px;
   letter-spacing: -0.24px;
   font-family: 'Montserrat Alternates';
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease 0.2s;
 }
 
 .glass_of_water_right_descr {
@@ -1291,10 +1404,17 @@ header .container .header_logo:hover {
   color: #002856;
   font-size: 24px;
   line-height: 28px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease 0.3s;
 }
 
 .glass_of_water_right_button {
   margin-top: 160px;
+  padding-bottom: 90px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease 0.4s;
 }
 
 .glass_of_water_right_button button {
@@ -1317,7 +1437,7 @@ header .container .header_logo:hover {
 }
 
 footer {
-  background: #dff1fd;
+  background: #fff;
   padding: 48px 0 32px 0;
 }
 
