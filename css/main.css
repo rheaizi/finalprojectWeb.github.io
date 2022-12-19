@@ -319,6 +319,11 @@ header .container .header_logo:hover {
   margin-left: 70px;
 }
 
+.nature_minerals_wrap_left a._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+
 .nature_minerals_wrap_left a span {
   color: #002856;
   position: absolute;
@@ -640,6 +645,11 @@ header .container .header_logo:hover {
   transform: translateY(50px);
   opacity: 0;
   transition: all 0.8s ease 0.4s;
+}
+
+.balance_wrap a._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .balance_wrap a span {
