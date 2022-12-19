@@ -58,6 +58,15 @@ header .container .header_logo:hover {
   font-size: 66px;
   letter-spacing: -0.24px;
   font-family: 'Montserrat Alternates',sans-serif;
+
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease 0s;
+}
+
+.noSoda_left_title._active{
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .noSoda_left_descr {
@@ -66,6 +75,15 @@ header .container .header_logo:hover {
   max-width: 880px;
   font-family: 'Museo Sans Cyrl 300', sans-serif;
   font-size: 16px;
+
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease-in 0s;
+}
+
+.noSoda_left_descr._active{
+  transform: translateY(0);
+  opacity: 1;  
 }
 
 .noSoda_right {
