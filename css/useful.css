@@ -1,6 +1,7 @@
 body {
   font-family: 'Museo Sans Cyrl 300';
   letter-spacing: -0.24px;
+  overflow-x: hidden;
   /* position: relative; */
 }
 
@@ -114,7 +115,7 @@ nav {
   .choose_wave {
     background: url(" https://turanwater.com/assets/img/bottom-wave.svg") repeat-x 0 100%/contain;
     position: absolute;
-    top: 732px;
+    top: 705px;
     width: 100%;
     height: 18px; 
   }
@@ -142,7 +143,7 @@ nav {
     width: 42px;
     height: 42px;
     right: 300px;
-    top: 734px;
+    top: 714px;
   }
   .bubbles .third{
     position: absolute;
@@ -154,7 +155,7 @@ nav {
     width: 28px;
     height: 28px;
     right: 515px;
-    top: 735px;
+    top: 715px;
   }
   .first._active{
     transform: translateY(-1000px) scale(1.5, 1.5);
@@ -841,7 +842,7 @@ nav {
         transition: all 10s ease 0s;
         width: 57px;
         height: 57px;
-        /* left: 86%; */
+        left: 86%;
         /* background-color: red; */
       }
       .eleventh._active{
@@ -853,7 +854,7 @@ nav {
         transition: all 10s ease 0.3s;
         width: 34px;
         height: 34px;
-        /* left: 90%; */
+        left: 90%;
         /* background-color: red; */
       }
       .twelveth._active{
