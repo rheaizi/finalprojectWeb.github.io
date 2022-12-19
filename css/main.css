@@ -1,3 +1,19 @@
+.zat{
+  opacity: 0.8;
+  transform: translateX(-10%);
+  width: 90%;
+  transition: all 2s ease 0.2s;
+}
+.inView {
+  width: 100%;
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.healthy_slide_picture .opacity0{
+  opacity: 0;
+}
 header {
   height: 80px;
   width: 100%;
@@ -36,7 +52,43 @@ header .container .header_logo:hover {
 .main {
   min-height: 100vh;
 }
-
+.main_text{
+  position: absolute;
+  color: rgba(0, 0, 0,0);
+  top: 180px;
+  left: 300px;
+  font-family: 'Montserrat Alternates';
+  font-size: 120px;
+  line-height: 132px;
+  letter-spacing: -1.8px;
+  /* color: white; */
+  -webkit-text-stroke: 1px #fff;
+  margin-bottom: 48px;
+  z-index: 9;
+  
+}
+.main_text_1{
+  animation: load 9s infinite 1s;
+}
+.main_text_2{
+  animation: load2 9s infinite 1s;
+}
+@keyframes load {
+  0%{
+    transform: translateX(-400px);}
+  100%{
+    transform: translateX(300px);
+  }
+  
+  
+}
+@keyframes load2 {
+  0%{
+    transform: translateX(500px);}
+  100%{
+    transform: translateX(-200px);
+  }
+}
 .main_tau {
   width: 100%;
   height: 96vh;
@@ -65,9 +117,14 @@ header .container .header_logo:hover {
   margin-left: 90px;
   padding: 4rem 15px;
   background-color: white;
+  
 }
 
+
 .single_turan_title {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease 0s;
   font-family: 'Montserrat Alternates';
   font-size: 65px;
   line-height: 1.5;
@@ -76,8 +133,15 @@ header .container .header_logo:hover {
   color: #002856;
   margin-bottom: 64px;
 }
+.single_turan_title._active,.single_turan_descr._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 .single_turan_descr {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease 0.1s;
   font-family: 'Museo Sans Cyrl 300';
   font-size: 16px;
   line-height: 28px;
@@ -102,14 +166,24 @@ header .container .header_logo:hover {
 }
 
 .zhumbaktas_content_title {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease 0s;
   font-family: 'Montserrat Alternates';
   font-size: 60px;
   line-height: 72px;
   letter-spacing: -0.9px;
   color: #FFFFFF;
 }
+.zhumbaktas_content_title._active, .zhumbaktas_content_descr._active, .zhumbaktas_content a._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 .zhumbaktas_content_descr {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1s ease 0.1s;
   font-family: 'Museo Sans Cyrl 300';
   font-size: 16px;
   width: 390px;
@@ -121,6 +195,9 @@ header .container .header_logo:hover {
 }
 
 .zhumbaktas_content a {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 1.2s ease 0.2s;
   display: block;
   width: 210px;
   height: 210px;
@@ -154,7 +231,6 @@ header .container .header_logo:hover {
 }
 
 .nature_minerals {
-  border: 1px solid red;
   padding-top: 102px;
   padding-bottom: 96px;
   min-height: 584px;
@@ -187,10 +263,32 @@ header .container .header_logo:hover {
 }
 
 .nature_minerals_wrap_left_title_top {
+  display: block;
   margin-left: -7%;
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: all 3s ease 0.1s;
+}
+.nature_minerals_wrap_left_title_top._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.nature_minerals_wrap_left_title_bottom {
+  display: block;
+  transform: translateX(200px);
+  opacity: 0;
+  transition: all 3s ease 0.1s;
+}
+.nature_minerals_wrap_left_title_bottom._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
+
 .nature_minerals_wrap_left_descr {
+  transform: translateY(200px);
+  opacity: 0.5;
+  transition: all 2s ease 0.2s;
   font-family: 'Museo Sans Cyrl 300';
   color: #182438;
   font-size: 16px;
@@ -199,8 +297,15 @@ header .container .header_logo:hover {
   line-height: 1.75;
   margin-bottom: 32px;
 }
+.nature_minerals_wrap_left_descr._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 .nature_minerals_wrap_left a {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 1s ease 0.3s;
   display: block;
   width: 210px;
   height: 210px;
@@ -249,6 +354,16 @@ header .container .header_logo:hover {
 
 .nature_minerals_wrap_right_elements_m1 {
   margin-left: auto;
+  width: 72px;
+  height: 72px;
+  margin-bottom: 24px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 2s ease 0.2s;
+}
+.nature_minerals_wrap_right_elements_m1._active,.nature_minerals_wrap_right_elements_m2._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
   width: 92px;
   height: 92px;
   margin-bottom: 24px;
@@ -294,6 +409,9 @@ header .container .header_logo:hover {
   width: 92px;
   height: 92px;
   margin-bottom: 24px;
+  transform: translateY(70px);
+  opacity: 0;
+  transition: all 2s ease 0.3s;
 }
 
 .nature_minerals_wrap_right_elements_m2_text {
@@ -337,6 +455,15 @@ header .container .header_logo:hover {
   width: 112px;
   height: 112px;
   margin-bottom: 24px;
+  transform: translateY(90px);
+  opacity: 0;
+  transition: all 2s ease 0.4s;
+}
+.nature_minerals_wrap_right_elements_m3._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
+  width: 92px;
+  height: 92px;
 }
 
 .nature_minerals_wrap_right_elements_m3_text {
@@ -376,6 +503,16 @@ header .container .header_logo:hover {
 }
 
 .nature_minerals_wrap_right_elements_m4 {
+  width: 74px;
+  height: 74px;
+  margin-bottom: 24px;
+  transform: translateY(110px);
+  opacity: 0;
+  transition: all 2s ease 0.5s;
+}
+.nature_minerals_wrap_right_elements_m4._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
   width: 94px;
   height: 94px;
   margin-bottom: 24px;
@@ -422,7 +559,8 @@ header .container .header_logo:hover {
   width: 74px;
   height: 74px;
   margin-bottom: 24px;
-
+<<<<<<< HEAD
+=======
   transform: translateY(130px);
   opacity: 0;
   transition: all 2s ease 0.6s;
@@ -466,7 +604,6 @@ header .container .header_logo:hover {
 
 .balance {
   background: url("../img/main_page/balance_bg.jpg") no-repeat 50%;
-  border: 1px solid red;
   color: #ecf7fe;
   padding-top: 128px;
   padding-bottom: 25px;
@@ -490,6 +627,9 @@ header .container .header_logo:hover {
   position: absolute;
   margin-left: 72px;
   margin-top: -50px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 0.8s ease 0.4s;
 }
 
 .balance_wrap a span {
@@ -517,6 +657,13 @@ header .container .header_logo:hover {
   font-size: 60px;
   letter-spacing: -0.24px;
   font-family: 'Montserrat Alternates';
+  transform: translateY(80px);
+  opacity: 0;
+  transition: all 1s ease 0.2s;
+}
+.balance_wrap_title._active,.balance_wrap_text._active,.balance_wrap_numbers._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .balance_wrap_text {
@@ -526,6 +673,9 @@ header .container .header_logo:hover {
   line-height: 28px;
   font-family: 'Museo Sans Cyrl 300';
   color: #ecf7fe;
+  transform: translateY(55px);
+  opacity: 0;
+  transition: all 1s ease 0.3s;
 }
 
 .balance_wrap_numbers {
@@ -538,6 +688,9 @@ header .container .header_logo:hover {
   letter-spacing: -0.24px;
   margin-left: auto;
   margin-right: 20%;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1.2s ease 0.2s;
 }
 
 .balance_wrap_numbers span {
@@ -546,6 +699,7 @@ header .container .header_logo:hover {
 
 .space {
   padding: 128px 0 80px;
+  height: 550px;
 }
 
 .space .container {
@@ -563,6 +717,13 @@ header .container .header_logo:hover {
   font-size: 60px;
   letter-spacing: -0.24px;
   font-family: 'Montserrat Alternates';
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1.2s ease 0.25s;
+}
+.space_wrap_texts_title._active,.space_wrap_texts_descr._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .space_wrap_texts_descr {
@@ -572,6 +733,9 @@ header .container .header_logo:hover {
   font-family: 'Museo Sans Cyrl 300';
   font-size: 16px;
   line-height: 28px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 3s ease 0.2s;
 }
 
 .space_wrap_photos {
@@ -585,7 +749,18 @@ header .container .header_logo:hover {
   object-fit: contain;
   margin-left: auto;
   display: block;
+  transition-property: all;
+	transition-duration: 3s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  opacity: 0;
+  transition-delay: 1s;
+
 }
+.space_wrap_photos_kosmonavt img._active{
+   width: 226px;
+  height: 375px; 
+  transform: translate(0px, 0px);
+  opacity: 1;}
 
 .space_wrap a {
   display: block;
@@ -594,6 +769,13 @@ header .container .header_logo:hover {
   text-align: center;
   position: relative;
   margin-top: -56px;
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: all 0.8s ease 0.9s;
+}
+.space_wrap a._active{
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 
 .space_wrap a span {
@@ -630,7 +812,6 @@ header .container .header_logo:hover {
   width: 627px;
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
 }
 
 .healthy_slide_text_count {
@@ -720,6 +901,7 @@ header .container .header_logo:hover {
   height: 100%;
   transform-origin: left;
   object-fit: cover;
+  transition: all ease 1s;
 }
 
 .bottles {
@@ -1052,18 +1234,35 @@ header .container .header_logo:hover {
   top: 20%;
   right: 5px;
 }
+.glass_of_water{
+  margin-bottom: 50px;
+  min-height: 760px;
+  
+}
 
 .glass_of_water .container {
   display: flex;
   background-color: #ecf7fe;
 }
+.glass_of_water_left{
+  position: relative;
+}
 
 .glass_of_water_left img {
   width: 1060px;
+  position: absolute;
+  /* left: 100%; */
+  top: 0;
+  width: 973px;
+  height: 100%;
+  /* height: 100%; */
+  transform-origin: left;
+  object-fit: cover;
+  transition: all ease 1s;
 }
 
 .glass_of_water_right {
-  padding-left: 70px;
+  padding-left: 1070px;
 }
 
 .glass_of_water_right_count {
@@ -1080,7 +1279,7 @@ header .container .header_logo:hover {
 
 .glass_of_water_right_title {
   max-width: 450px;
-  margin-top: 135px;
+  margin-top: 65px;
   color: #002856;
   font-size: 60px;
   letter-spacing: -0.24px;

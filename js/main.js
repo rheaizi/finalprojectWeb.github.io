@@ -5,7 +5,7 @@ function animOnScroll(){
     for (let i = 0; i < animItems.length; i++) {
 
         var elem = animItems[i];
-        var distInView = elem.getBoundingClientRect().top - window.innerHeight + 20;
+        var distInView = elem.getBoundingClientRect().top - window.innerHeight;
         if (distInView < 0) {
             console.log("yes");
             elem.classList.add("_active");
@@ -63,12 +63,31 @@ document.querySelector('.healthy_slide_text_prev').onclick = function(){
     slider();
 };
 
-function letsgo () {
-    var s = document.querySelector('.volna');
-    s.classList.add("_activia");
+let imges = document.querySelectorAll('.glass_of_water_left img');
+console.log(imges);
+var current = 0;
+let sandr = document.querySelector('.glass_of_water_right_count').innerHTML;
+
+function slider() {
+    for (let i = 0; i < imges.length; i++) {
+        imges[i].classList.add('opacity0');
+    }
+    imges[current].classList.remove('opacity0');
+    document.querySelector('.glass_of_water_right_count').innerHTML='0'+(current+1)+sandr.substring(2);
 }
-function letsgoEnd(){
-    var s = document.querySelector('.volna');
-    s.classList.remove("_activia");
-    console.log(s);
-}
+document.querySelector('.glass_of_water_right_button_next').onclick = function(){
+    if(current < images.length - 1) {
+        current++;
+    } else {
+        current = 0;
+    }
+    slider();
+};
+document.querySelector('.glass_of_water_right_button_prev').onclick = function(){
+    if(current-1== -1) {
+        current=images.length-1;
+    } else {
+        current --;
+    }
+    slider();
+};
