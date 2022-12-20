@@ -11,17 +11,37 @@
 </head>
 <!-- ,bub() -->
 <body onload="animOnScroll(),bub()">
+    <section class="burger">
+        <input type="checkbox" id="burger">
+        <label for="burger"></label>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about_turan.html">О воде TURAN</a></li>
+                <li><a href="useful.html">Полезно знать</a></li>
+                <li><a href="assortment.html">Ассортимент</a></li>
+                <li><a href="sciencs_materials.html">Научные материалы</a></li>
+                <li><a href="respon.html">Социальная ответсвенность</a></li>
+            </ul>
+        </nav>
+        <div class="burger_logo"></div>
+        <div class="burger_social_link">
+            <a href="https://www.facebook.com/turanwater"><img src="https://turanwater.com/assets/img/fb.svg" alt="facebook_link"></a>
+            <a href="https://www.instagram.com/turanwater/"><img src="https://turanwater.com/assets/img/insta.svg" alt="insta_link"></a>
+        </div>
+    </section>
+
     <header>
         <div class="container">
-            <div clas>==</div>
-            <a href="#" class="header_logo"></a>
+            <div clas></div>
+            <a href="index.html" class="header_logo"></a>
         </div>
     </header>
     <nav>
         <div class="container">
             <ul>
-                <li><a class="main_page" href="main.html">Главная</a></li>
-                <li><a class="current" href="#">Полезно знать</a></li>
+                <li><a class="main_page" href="index.html">Главная</a></li>
+                <li><a class="current" href="useful.html">Полезно знать</a></li>
             </ul>
         </div>
     </nav>
@@ -72,6 +92,13 @@
                     <p>Вода, полученная из различных водозаборов, обработанная любым способом</p>
                 </div>
                 </div>
+                <div class="types_curr _anim">
+                    <div>
+                    <img src="https://turanwater.com/assets/img/icons/bottle-4.svg" alt="nature">
+                    <h3>Природная</h3>
+                    <p>Вода из природных месторождений в исходном природном состоянии</p>
+                </div>
+                </div>
             </div>
             <div class="types_bubbles">
                 <div class="fourth _anim" id="fourth"></div>
@@ -93,7 +120,9 @@
         </div>
     </section>
     <section class="composition">
+        <div class="temp">
         <img class="composition_img" src="img/about_page/after_control_water_0-5.png" alt="after_control_water_0-5">
+    </div>
         <div class="container">
             <div class="composition_wrap">
                 <div class="composition_wrap_content">
@@ -187,7 +216,9 @@
         <div class="container">
             <div class="structure_numeric_title _anim">
                 <span>3</span>
-                <h2>Что такое легкая вода?</h2>
+                <div class="titlee">
+                <h2 class="titleee">Что такое легкая вода?</h2>
+            </div>
             </div>
             <div class="structure_content">
                 <div class="structure_content_right _anim">
@@ -204,7 +235,7 @@
                         <img src="https://turanwater.com/assets/img/water_drops.svg" alt="water_drops">
                         <span>133 ppm</span>
                     </div>
-                    <a class="btn _anim" href="#">
+                    <a class="btn _anim" href="https://turanwater.com/scientific-articles/%C2%ABlegkaya%C2%BB-pitevaya-voda-v-kazaxstane-%E2%80%93-prirodnyij-produkt-s-unikalnyimi-svojstvami">
                         <span>Узнать больше</span>
                     </a>
                 </div>
@@ -220,6 +251,7 @@
                     <p class="who_text _anim">Полезные свойства TURAN регулярно изучаются и подтверждаются:</p>
                 </div>
                 <div class="country">
+                    <div class="tablet1">
                 <div class="quality_kz1 _anim">
                     <p class="quality_kz1_text">НИИ гидрогеологии и геоэкологии им. У.М. Ахмедсафина</p>
                     <div class="quality_kz1_map">Казахстан</div>
@@ -228,6 +260,8 @@
                     <p class="quality_kz2_text">Национальным центром экспертизы КООЗ МЗ РК</p>
                     <div class="quality_kz2_map">Казахстан</div>
                 </div>
+            </div>
+            <div class="tablet2">
                 <div class="quality_uk _anim">
                     <p class="quality_uk_text">НИИ медицинской реабилитации и курортологии</p>
                     <div class="quality_uk_map">Украина</div>
@@ -236,6 +270,7 @@
                     <p class="quality_ger_text">Европейским Институтом качества «Фрезениус» SGS INSTITUT FRESENIUS</p>
                     <div class="quality_ger_map">Германия</div>
                 </div>
+            </div>
             </div>
             </div>
         </div>
@@ -262,22 +297,22 @@
         <div class="container">
             <div class="row">
                 <div class="row_logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="img/main_page/logo/logo_turan.svg" alt="logo_turan">
                     </a>
                 </div>
                 <div class="row_product">
                     <ul class="row_product_list">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">О воде TURAN</a></li>
-                        <li><a href="#">Полезно знать</a></li>
-                        <li><a href="#">Ассортимент</a></li>
-                        <li><a href="#">Научные материалы</a></li>
-                        <li><a href="#">Социальная ответственность</a></li>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about_turan.html">О воде TURAN</a></li>
+                        <li><a href="useful.html">Полезно знать</a></li>
+                        <li><a href="assortment.html">Ассортимент</a></li>
+                        <li><a href="sciencs_materials.html">Научные материалы</a></li>
+                        <li><a href="respon.html">Социальная ответственность</a></li>
                     </ul>
                     <div class="row_product_socials">
-                        <a href="#"><img src="https://turanwater.com/assets/img/fb.svg" alt="fb"></a>
-                        <a href="#"><img src="https://turanwater.com/assets/img/insta.svg" alt=""></a>
+                        <a href="https://www.facebook.com/turanwater"><img src="https://turanwater.com/assets/img/fb.svg" alt="fb"></a>
+                        <a href="https://www.instagram.com/turanwater/"><img src="https://turanwater.com/assets/img/insta.svg" alt=""></a>
                     </div>
                 </div>
                 <div class="row_main_office">

@@ -18,6 +18,143 @@
 .glass_of_water_left .opacityzero{
   opacity: 0;
 }
+ 
+.burger .burger_logo{
+  display: none;
+  position: fixed;
+  width: 106px;
+  height: 54px;
+  top: 40px;
+  left: 77px;
+  z-index: 101;
+  background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover;
+}
+
+.burger .burger_social_link{
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 105px;
+  z-index: 101;
+}
+
+.burger .burger_social_link a img{
+  height: 22px;
+  width: 22px;
+}
+
+.burger .burger_social_link a img:first-child{
+  margin-right: 25px;
+}
+
+#burger, [for=burger]{
+  cursor: pointer;
+  display: none;
+}
+
+[for=burger]{
+  display: block;
+  width: 30px;
+  font-size: 50px;
+  text-align: center;
+  position: fixed;
+  left: 115px;
+  top: 17px;
+  z-index: 101;
+}
+
+[for=burger]::before{
+  content: '=';
+  color: white;
+}
+
+.burger nav{
+  display: none;
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  border: 3px solid orange;
+}
+
+.burger nav ul{
+  text-align: center;
+  margin-top: 180px;
+  padding: 0;
+  list-style-type: none;
+  user-select: none;
+}
+
+.burger nav ul li{
+  margin-bottom: 33px;
+}
+
+.burger nav ul li a{
+  text-align: center;
+  font-size: 38px;
+  letter-spacing: -0.24px;
+  text-decoration: none;  
+  color: #002856;
+  -webkit-text-stroke: 1px #002856;
+  font-family: 'Montserrat Alternates',sans-serif;
+  opacity: 1;
+}
+
+.burger nav ul > li:first-child a{
+  color: #00a0df;
+  -webkit-text-stroke: 1px #00a0df;
+}
+
+.burger nav ul li a:hover{
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+
+#burger:checked + label + nav{
+  display: block;
+  animation: show .5s ease;
+}
+
+#burger:checked + label + nav + .burger_logo{
+  display: block;
+}
+
+#burger:checked + label + nav + .burger_logo + .burger_social_link{
+  display: block;
+}
+
+
+#burger:checked + [for=burger]::before{
+  content: 'X';
+  position: fixed;
+  font-size: 20px;
+  font-family: 'Museo Sans Cyrl 500',sans-serif;
+  top: -50px;
+  right: -58px;
+  padding-top: 110px;
+  padding-right: 40px;
+  cursor: pointer;
+  color: #00a0df;
+
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  background: url("../img/main_page/btn_wave_dark.svg") no-repeat;
+
+}
+
+
+@keyframes show{
+  0%{
+    opacity: 0;
+  }100%{
+    opacity: 1;
+  }
+}
+
 
 header {
   height: 80px;
@@ -317,11 +454,6 @@ header .container .header_logo:hover {
   text-align: center;
   position: relative;
   margin-left: 70px;
-}
-
-.nature_minerals_wrap_left a._active{
-  transform: translate(0px, 0px);
-  opacity: 1;
 }
 
 .nature_minerals_wrap_left a span {
@@ -645,11 +777,6 @@ header .container .header_logo:hover {
   transform: translateY(50px);
   opacity: 0;
   transition: all 0.8s ease 0.4s;
-}
-
-.balance_wrap a._active{
-  transform: translate(0px, 0px);
-  opacity: 1;
 }
 
 .balance_wrap a span {
@@ -1636,4 +1763,464 @@ footer .container .row_office_second_contact li:last-child::before {
   width: 18px;
   height: 18px;
   left: 0;
+}
+
+
+
+@media screen and (max-width: 820px){
+	body{
+		max-width: 820px;
+  }
+	header{
+		max-width: 820px;
+  }
+	.main{
+    max-width: 820px;
+    overflow-x: hidden;
+  }
+  .main_text{
+    font-size: 100px;
+    overflow-x: hidden;
+    display: none;
+  }
+  /* .main_text_1{
+    overflow-x: hidden;
+  }
+  .main_text_2{
+    overflow-x: hidden;
+  } */
+  .main_tau{
+    width: 100vw;
+    object-fit: cover;
+  
+    object-position: center top;
+    /* -webkit-transform-origin: center top; */
+  }
+  .main_bottle {
+    top: 150px;
+  }
+
+	.single_turan{
+		margin: 0 50px;
+    padding: 0 15px;
+  }
+  .single_turan_title{
+    margin-top: 40px;
+    font-size: 50px;
+    margin-bottom: 64px;
+  }
+  .single_turan_descr{
+    margin-bottom: 100px;
+  }
+	.zhumbaktas{
+    background-size:  840px 695px;
+    min-height: 690px;
+    padding: 0;
+  }
+  .zhumbaktas_content_title{
+    margin-top: 140px;
+    font-size: 42px;
+    padding-left: 50px;
+    margin-bottom: 48px;
+    line-height: 60px;
+  }
+  .zhumbaktas_content_wavebtn{
+    -webkit-box-ordinal-group: 3;
+    order: 2;
+    margin-left: auto;
+  }
+  .zhumbaktas_content a::before{
+    background-size: 180px 180px;
+  }
+  .zhumbaktas_content_descr{
+    width: 100%;
+    padding-left: 50px;
+    margin-top: 0px;
+  }
+  .zhumbaktas_content a span {
+    top: 80px;
+    left: 41px;
+  }
+  .zhumbaktas_banner {
+    width: 90%;
+    left: -100px;
+    height: 100%;
+    position: absolute;
+    top: 1px;
+    background-size: 600px 740px;
+  }
+	.nature_minerals{
+    margin: 0px;
+    padding-top: -151px;
+    padding: 112px 0 110px;
+    margin-bottom: 150px;
+  }
+  .nature_minerals .container{
+    padding: 0 15px;
+    margin: 0 50px;
+  }
+
+  .nature_minerals_wrap {
+    flex-wrap: wrap;
+  }
+  
+  .nature_minerals_wrap_left {
+    padding-left: 7%;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .nature_minerals_wrap_left_title {
+    font-size: 105px;
+    line-height: 132px;
+    letter-spacing: -1.8px;
+    margin-bottom: 48px;
+    z-index: 16;
+    color:rgba(0,0,0,0);
+    position: relative;
+  }
+  .nature_minerals_wrap_left_wavebtn{
+    /* margin-left: 0; */
+    margin-top: -40px;
+  }
+  .nature_minerals_wrap_left a{
+    margin-left: 100px;
+  }
+  .nature_minerals_wrap_left a span{
+    top: 83px;
+    left: 45px;
+  }
+  .nature_minerals_wrap_left a::before{
+    background-size: 180px 180px;
+    width: 180px;
+    height: 180px;
+    opacity: 0.6;
+  }
+  .nature_minerals_wrap_left a{
+    opacity: 1;
+    background-size: 180px 180px;
+  }
+  .nature_minerals_wrap_left_title_top {
+    display: block;
+    margin-left: -7%;
+    transform: translateX(-200px);
+    opacity: 0;
+    transition: all 3s ease 0.1s;
+  }
+
+  .nature_minerals_wrap_left_title_bottom {
+    display: block;
+  }
+  
+  .nature_minerals_wrap_left_descr {
+    margin-right: 40px;
+    margin-left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 250px;
+
+  }
+  .temp{
+    position: absolute;
+    margin-top: 650px;
+    margin-right: 50px;
+  }
+  .nature_minerals_wrap_right_bottle{
+      left: 230px;
+      top: -372px;
+      background-size: 261px;
+      /* left: 230px;
+      top: -552px; */
+  }
+  .nature_minerals_wrap_right_elements{
+    width: 350px;
+    height: 350px ;
+    margin: 0 auto;
+    margin-left: 180px;
+    /* margin-top: 0px; */
+    margin-top: 120px;
+  }
+  .nature_minerals_wrap_left_wavebtn{
+    position: absolute;
+    margin-left: 200px;
+  }
+  .volna{
+    position: absolute;
+    left: 450px;
+    top: 2600px;
+  }
+  .nature_minerals_wrap_right_elements_m1{
+    margin: 0;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 24px;
+  }
+  .nature_minerals_wrap_right_elements_m2{
+    width: 92px;
+    height: 92px;
+    margin: -50px 0 0 auto;
+       }
+
+  .nature_minerals_wrap_right_elements_m3{
+    margin: -30px auto 0 90px;
+    width: 112px;
+    height: 112px;
+  }
+  .nature_minerals_wrap_right_elements_m4{
+    width: 94px;
+    height: 94px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    margin-right: auto;
+
+  }
+  .nature_minerals_wrap_right_elements_m5 {
+    margin: -55px 40px 0 auto;
+    margin-top: -60px;
+    margin-left: 236px;
+    width: 74px;
+    height: 74px;   
+  }
+	.balance{
+    padding-top: 200px;
+    padding-bottom: 70px;
+  }
+  .balance .container{
+    padding: 0;
+    margin: 0;
+    max-width: 720px;
+  }
+  .balance_wrap_title{
+    margin: 0;
+    padding: 0;
+    font-size: 42px;
+    max-width: 720px;
+    margin-left: 70px;
+  }
+  .balance_wrap_text{
+    max-width: 620px;
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+    margin-top: 40px;
+  }
+  .balance_wrap_numbers{
+    margin-right: 100px;
+  }
+  .balance_wrap_wavebtn{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+  }
+	.space{
+    padding: 128px 0 80px;
+    margin: 0;
+    min-height: 950px;
+  }
+  .space .container{
+    max-width: 720px;
+    padding: 0;
+    margin: 0;
+  }
+  .space_wrap{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .space_wrap_texts{
+    margin: 0;
+    padding: 0;
+    margin-left: 70px;
+    /* margin-top: 80px; */
+  }
+  .space_wrap_texts_title{
+    font-size: 42px;
+  }
+  .space_wrap_photos{
+    margin-left: 250px;
+    margin-top: 40px;
+  }
+  .space_wrap a::before{
+    width: 180px;
+    height: 180px;
+    background-size: 180px 180px;
+  }
+  .space_wrap a span{
+    top: 82px;
+    left: 46px;
+  }
+  .healthy{
+    padding: 0;
+    margin: 0;
+    min-height: 1150px;
+  }
+  .healthy_first{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .healthy_slide_picture img{
+    left: 0;
+    top: 763px;
+  }
+  .healthy_slide_text a::before {
+    /* display: none; */
+    width: 210px;
+    height: 210px;
+    background: url("../img/main_page/btn_wave_dark.svg") no-repeat;
+
+  }
+  .healthy_slide{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 5px solid #000; */
+    flex-direction: column;
+  }
+  .healthy_slide_text{
+    width: 685px;
+    /* order: 2; */
+  }
+  .healthy_slide_piccture{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .bottles{
+    max-width: 820px;
+    margin-top: 300px;
+    padding: 100px 0 55px 0;
+    /* display: none; */
+  }
+  .bottles .container{
+    padding: 0 15px;
+    margin: 0 50px;
+  }
+  .bottles_title{
+    max-width: 100%;
+    margin-bottom: 40px;
+    font-size: 42px;
+    text-align: center;
+  }
+  .bottles_wrap_slider{
+    margin-left: 0;
+  }
+  .bottles_wrap{
+  display: flex;
+  flex-direction: column;
+  }
+  .bottles_wrap_elements{
+    width: 350px;
+    height: 350px ;
+    margin: 0 auto;
+    margin-left: 180px;
+    margin-top: 50px;
+  }
+  .bottles_wrap_elements_m1{
+    margin: 0;
+        width: 92px;
+        height: 92px;
+        margin-bottom: 24px;
+  }
+  .bottles_wrap_elements_m2{
+    width: 92px;
+    height: 92px;
+    margin: -50px 0 0 auto;
+       }
+
+  .bottles_wrap_elements_m3{
+    margin: -30px auto 0 90px;
+    width: 112px;
+    height: 112px;
+  }
+  .bottles_wrap_elements_m4{
+    width: 94px;
+    height: 94px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    margin-right: auto;
+
+  }
+  .bottles_wrap_elements_m5 {
+    margin: -55px 40px 0 auto;
+    margin-top: -60px;
+    margin-left: 236px;
+    width: 74px;
+    height: 74px;   
+  }
+  .bottles_wrap_elements_link{
+    transform: translateY(-300px);
+  }
+  .glass_of_water{
+    max-width: 820px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 125px;
+    /* position: relative; */
+  }
+  .glass_of_water .container{
+    padding: 0 0;
+    margin: 0 0;
+    background-color: #fff;
+    max-width: 820px;
+    height: 621.5px;
+  }
+  .glass_of_water_left_img1,.glass_of_water_left_img2{
+    max-width: 820px;
+    height: 621.5px;
+
+  }
+  .glass_of_water_right{
+    position: relative;
+    top: 600px;
+    padding: 0;
+    margin-left: 60px;
+  }
+  footer {
+
+    padding: 48px 0 32px;
+    margin: 0 0;
+    max-width: 820px;
+    margin-top: 650px;
+
+  }
+  footer .container {
+    padding: 0 0px;
+    margin: 0 0px;
+    max-width: 820px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .row {
+    padding: 0 15px;
+    margin: 0 35px;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer .row_logo {
+    flex: 0 0 50%;
+    max-width: 330px;
+  }
+  /* footer .row_logo div{
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+  } */
+  footer .row_product {
+    flex: 0 0 50%;
+    max-width: 330px;
+  }
+  footer .row_product_list {
+    padding: 0;
+  }
+  footer .row_main_office {
+    flex-direction: column;
+    flex: 0 0 50%;
+    max-width: 330px;
+  }
+  footer .row_office {
+    flex: 0 0 50%;
+    max-width: 330px;
+  }
 }

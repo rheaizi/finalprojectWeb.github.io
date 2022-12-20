@@ -5,6 +5,144 @@ body {
   overflow-x: hidden;
 }
 
+
+.burger .burger_logo{
+  display: none;
+  position: fixed;
+  width: 106px;
+  height: 54px;
+  top: 40px;
+  left: 77px;
+  z-index: 101;
+  background: url("../img/main_page/logo/logo_turan.svg") no-repeat 50%/cover;
+}
+
+.burger .burger_social_link{
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 105px;
+  z-index: 101;
+}
+
+.burger .burger_social_link a img{
+  height: 22px;
+  width: 22px;
+}
+
+.burger .burger_social_link a img:first-child{
+  margin-right: 25px;
+}
+
+#burger, [for=burger]{
+  cursor: pointer;
+  display: none;
+}
+
+[for=burger]{
+  display: block;
+  width: 30px;
+  font-size: 50px;
+  text-align: center;
+  position: fixed;
+  left: 115px;
+  top: 17px;
+  z-index: 101;
+}
+
+[for=burger]::before{
+  content: '=';
+  color: white;
+}
+
+.burger nav{
+  display: none;
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  border: 3px solid orange;
+}
+
+.burger nav ul{
+  text-align: center;
+  margin-top: 180px;
+  padding: 0;
+  list-style-type: none;
+  user-select: none;
+}
+
+.burger nav ul li{
+  margin-bottom: 33px;
+}
+
+.burger nav ul li a{
+  text-align: center;
+  font-size: 38px;
+  letter-spacing: -0.24px;
+  text-decoration: none;  
+  color: #002856;
+  -webkit-text-stroke: 1px #002856;
+  font-family: 'Montserrat Alternates',sans-serif;
+  opacity: 1;
+}
+
+.burger nav ul > li:first-child a{
+  color: #00a0df;
+  -webkit-text-stroke: 1px #00a0df;
+}
+
+.burger nav ul li a:hover{
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+
+#burger:checked + label + nav{
+  display: block;
+  animation: show .5s ease;
+}
+
+#burger:checked + label + nav + .burger_logo{
+  display: block;
+}
+
+#burger:checked + label + nav + .burger_logo + .burger_social_link{
+  display: block;
+}
+
+
+#burger:checked + [for=burger]::before{
+  content: 'X';
+  position: fixed;
+  font-size: 20px;
+  font-family: 'Museo Sans Cyrl 500',sans-serif;
+  top: -50px;
+  right: -58px;
+  padding-top: 110px;
+  padding-right: 40px;
+  cursor: pointer;
+  color: #00a0df;
+
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  background: url("../img/main_page/btn_wave_dark.svg") no-repeat;
+
+}
+
+
+@keyframes show{
+  0%{
+    opacity: 0;
+  }100%{
+    opacity: 1;
+  }
+}
+
+
 /* line 6, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
 header {
   height: 80px;
@@ -288,6 +426,9 @@ nav {
     .types_blended._active{
       transform: translate(0px, 0px);
       opacity: 1;
+    }
+    .types_curr{
+      display: none;
     }
     /* line 152, ../Users/Bakdaulet/Desktop/finalprojectWeb/sass/useful.sass */
     .types_blended div {
@@ -1480,3 +1621,444 @@ footer {
               left: 0; }
 
 /*# sourceMappingURL=useful.css.map */
+@media screen and (max-width: 820px) {
+  body{
+    max-width: 820px;
+  }
+  header{
+    max-width: 820px;
+  }
+  header .container .header_logo{
+    left: 42%;
+  }
+  .choose img{
+    width: 100%;
+  }
+  .choose_wave{
+    width: 100%;
+    top: 1165px;
+  }
+  .choose_content{
+    margin-top: 295px;
+    margin-left: -25px;
+  }
+  .bubbles .first{
+    top: 1165px;
+    right: 225px;
+  }
+  .bubbles .second{
+    top: 1168px;
+    right: 290px;
+  }
+  .bubbles .third{
+    top: 1170px;
+    right: 470px;
+  }
+   .first._active{
+    transform: translateY(-1550px) scale(1.5, 1.5);
+  }
+  .second._active{ 
+    transform: translateY(-1350px) scale(1.5, 1.5);
+  }
+  .third._active{ 
+    transform: translateY(-1350px) scale(1.5, 1.5);
+  }
+   .types{
+    margin-bottom: 50px;
+  } 
+  .types .container{
+    padding: 0 50px;
+  }
+  .types_numeric_title{
+    margin-top: -100px;
+    padding-left: 0;
+  }
+  .types_numeric_title_second{
+    margin: 0 0;
+    margin-left: 20px;
+  }
+  .types_numeric_title_second h2{
+    margin-top: 5px;
+    font-size: 42px;
+    max-width: 460px;
+  }
+  .types_numeric_title span{
+    /* padding: 0 0; */
+    margin-right: 50px;
+    width: 180px;
+    height: 180px;
+  }
+  .types .row{
+    width: 720px;
+    flex-wrap: wrap;
+  }
+  .types .row p {
+    width: 260px;
+  }
+  .types_artificially{
+    width: 330px;
+    padding: 0 15px;
+    height: 380px;
+  }
+  .types_blended{
+    width: 330px;
+    padding: 0 15px;
+    height: 380px;
+  }
+  .types_processed{
+    width: 330px;
+    padding: 0 15px;
+    height: 380px;
+  }
+  .types_curr{
+    display: block;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.5s ease 0.2s;
+    width: 330px;
+    padding: 0 15px;
+    height: 380px;
+  }
+  .types_curr._active{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .types_curr div{
+    height: 270px;
+    border: 1px solid #dff1fd;
+    margin-bottom: 50px;
+    padding: 34px;
+  }
+  .types_natural{
+    display: none;
+  }
+  .types .row_2{
+    width: 720px;
+    padding: 0 0;
+    margin: 0 0;
+    padding-left: 20px;
+  }
+  .types_title{
+    max-width: 690px;
+    font-size: 60px;
+    padding: 0 0;
+    margin: 0 0;
+  }
+  .composition{
+    width: 820px;
+    padding: 0 0;
+  }
+  .composition .container{
+    padding: 0 50px;
+  }
+  .composition_wrap_content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .composition_wrap_content_title{
+    margin-left: -100px;
+    font-size: 100px;
+    padding: 0 0;
+    width: 200px;
+  }
+  .composition_wrap_content_descr{
+    margin-top: 300px;
+    max-width: 500px;
+    margin-left: -150px;
+    padding: 0 0;
+  }
+  .composition_wrap_content_elements{
+    max-width: 350px;
+    margin-left: -50px;
+  }
+  .composition{
+    margin-bottom: 120px;
+  }
+  /* .temp{
+    background: url(https://turanwater.com/assets/img/water_0-5.png) no-repeat right 5%;
+    position: absolute;  
+    height: 349px;
+    width: 350px;
+  } */
+    .composition_img{ 
+    top: 540px;
+    height: 399px;
+    width: 190px;
+    right: 50px;
+    object-fit: cover;
+  } 
+  .normalize{
+    padding: 103px;
+    height: 866px;
+    margin: 0 0;
+  }
+  .normalize_img{
+    width: 100%;
+    height: 100%;
+  }
+  .normalize .container{
+    max-width: 614px;
+    height: 660px;
+  }
+  .normalize .row{
+    width: 300px;
+    padding: 0 0;
+    margin: 0 0;
+  }
+  .normalize_numeric_title{
+    padding: 0 0;
+    margin: 0 0;
+    margin-top: 50px;
+    width: 554px;
+  }
+  .normalize_numeric_title h2{
+    width: 354px;
+    font-size: 42px;
+    padding: 0 0;
+    margin: 0 0;
+    margin-left: 250px;
+    line-height: 50px;
+  }
+  .normalize_numeric_title span{
+    width: 180px;
+    height: 180px;
+  }
+   .normalize .row{
+    width: 614px;
+    margin: 0;
+    padding: 0;
+   }
+  .normalize_right{
+    width: 307px;
+    padding: 0 15px;
+    margin: 0;
+  }
+  .normalize_right p{
+    max-width: 277px;
+  }
+  .normalize_left {
+    width: 307px;
+    padding: 0 15px;
+    margin: 0;
+  }
+  .normalize_left_text{
+    max-width: 307px;
+  }
+  .structure{  
+    padding: 0 50px;
+    margin: 0 0;
+    margin-bottom: 200px;
+    }
+    .structure .container{
+      max-width: 690px;
+      margin: 0 15px;
+      padding: 0 0;
+    }
+    .structure_numeric_title{
+      width: 460px;
+      padding: 0 0;
+      padding-left: 230px;
+      margin: 0 0;
+      margin-top: -60px;
+      margin-bottom: 75px;  
+    }
+    .structure_numeric_title span{
+      width: 180px;
+      height: 180px;
+      padding: 0 0;
+      margin: 0 0;
+      margin-top: 30px;
+      margin-left: -20px;
+    }
+    .structure_numeric_title h2{
+      font-size: 42px;
+      margin-top: -50px;
+      margin-bottom: 37px;
+    }
+    .structure_content{
+      width: 690px;
+      padding: 0 0;
+      margin: 0 0;
+    }
+      /* .structure .btn{
+        left: 0;
+      } */
+        
+        .structure_content_right{
+          width: 300px;
+          padding: 0 0;
+          margin: 0 0;
+          margin-top: 20px;
+        }
+        .structure_content_left{
+          width: 300px;
+          padding: 0 0;
+          margin: 0 0;
+        }
+        .structure_content_left_tap{
+          left: -390px;
+          padding: 0 0;
+          top: 300px;
+        }
+        .structure_content_left_tap img{
+          width: 200px;
+          padding: 0 0;
+          margin: 0 0;
+          margin-bottom: 40px;
+          margin-left: 0px;
+        }
+        .structure_content_left_tap span{
+          font-size: 50px;
+          display: block;
+          padding: 0 0;
+          margin-left: 20px;
+        }
+
+        .structure_content_left_drops{
+          width: 300px;
+        }
+        .structure_content_left_drops img{
+          margin-top: 125px;
+        }
+        .structure_content_left a{
+          left: 80px;
+          margin-left: 40px;
+          top: 310px;
+        }
+        .quality{
+          padding: 130px 0;
+          margin: 0 0;
+        }
+        .quality_img{
+          width: 100%;
+          height: 795px;
+          padding: 0 0;
+          margin: 0 0;
+        }
+
+        .quality .container{
+          padding: 0 0;
+          margin: 0 0;
+          width: 690px;
+          margin: 0 auto;
+        }
+        .quality .row{
+          margin: 0 0;
+          width: 690px;
+        }
+        .quality_title{
+          margin-top: 100px;
+          max-width: 690px;
+          padding: 0 0;
+          margin: 0 0;
+          margin-bottom: 33px;
+        }
+
+        .quality_title h2 {
+          width: 690px;
+          font-size: 42px; 
+        }
+        .country{
+          width: 690px;
+          padding: 0 0;
+          margin: 0 0;
+          flex-wrap: wrap;
+        }
+        /* .quality .country p{
+          width: 100px;
+          padding: 0 0;
+          margin: 0 0;
+        } */
+        .quality_kz1{
+          width: 330px;
+          padding: 0 15px;
+        }
+        .quality_kz2{
+          width: 330px;
+          padding: 0 15px;
+          margin-left: 45px;
+        }
+        .tablet1{
+          display: flex;
+          justify-content: space-between;
+          width: 690px;
+        }
+        .tablet2{
+          display: flex;
+          justify-content: space-between;
+          width: 690px;
+        }
+        .quality_uk{
+          width: 330px;
+          padding: 0 15px;
+        }
+        .quality_ger{
+          width: 330px;
+          padding: 0 15px;
+          margin-left: 45px;
+        }
+        .advantages .container{
+          padding: 0 0;
+        }
+        .advantages_title{
+          max-width: 395px;
+          font-size: 42px;
+        }
+        .advantages .gold{
+          left: 15px;
+          width: 300px;
+        }
+        .fourth._active{
+          transform: translateY(-3000px) scale(1.5, 1.5);
+          opacity: 1;
+        }
+        .fifth._active{
+          transform: translateY(-3000px) scale(1.5, 1.5);
+          opacity: 1;
+        }
+        .sixth._active{
+          transform: translateY(-3000px) scale(1.5, 1.5);
+          opacity: 1;
+        }
+        .seventh._active{
+          transform: translateY(-3000px) scale(1.5, 1.5);
+          opacity: 1;
+        }
+  footer {
+    height: 612px;
+    padding: 48px 0 32px; 
+  }
+  footer .container {
+    margin: 0;
+    padding: 0 15px; 
+  }
+  footer .row {
+    flex-wrap: wrap;
+  }
+  footer .row_logo {
+    width: 330px;
+    height: 290px; 
+    margin-left: 30px; 
+    padding: 0 15px;
+  }
+  footer .row_product {
+    width: 330px;
+    height: 290px; 
+    padding: 0 15px;
+  }
+  footer .row_product_list {
+    width: 330px; 
+    height: 302px;
+    margin-left: 30px; 
+    padding: 0 15px;
+  }
+  footer .row_office{
+    width: 330px;
+    margin-left: 40px; 
+    height: 302px;
+    padding: 0 15px;
+  }
+  footer .row_main_office{
+    margin-left: 30px;
+  }
+}
